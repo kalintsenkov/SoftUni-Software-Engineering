@@ -8,7 +8,7 @@ Write a program that determines whether based on the given age a person is: baby
 - **3-13 – child;**
 - **14-19 – teenager;**
 - **20-65 – adult;**
-- **\&gt;=66 – elder;**
+- **>=66 – elder;**
 - All the values are **inclusive**.
 
 ### Examples
@@ -65,9 +65,9 @@ Write a program to display numbers from given start to given end and their sum. 
 
 | **Input** | **Output** |
 | --- | --- |
-| 510 | 5 6 7 8 9 10Sum: 45 |
-| 026 | 0 1 2 … 26Sum: 351 |
-| 5060 | 50 51 52 53 54 55 56 57 58 59 60Sum: 605 |
+| 510 | 5 6 7 8 9 10 Sum: 45 |
+| 026 | 0 1 2 … 26 Sum: 351 |
+| 5060 | 50 51 52 53 54 55 56 57 58 59 60 Sum: 605 |
 
 # 5.Login
 
@@ -77,9 +77,9 @@ You will be given a string representing a username. The password will be that us
 
 | **Input** | **Output** |
 | --- | --- |
-| Acerlogingolet me inrecA  | Incorrect password. Try again.Incorrect password. Try again.Incorrect password. Try again.User Acer logged in.  |
+| Acerlogingolet me inrecA  | Incorrect password. Try again. Incorrect password. Try again. Incorrect password. Try again. User Acer logged in.  |
 | momoomom | User momo logged in. |
-| sunnyrainycloudysunnynot sunny | Incorrect password. Try again.Incorrect password. Try again.Incorrect password. Try again.User sunny blocked! |
+| sunnyrainycloudysunnynot sunny | Incorrect password. Try again. Incorrect password. Try again. Incorrect password. Try again. User sunny blocked! |
 
 # 6.Strong Number
 
@@ -101,7 +101,7 @@ You task is to calculate the total price of a purchase from a vending machine. U
 
 | **Input** | **Output** |
 | --- | --- |
-| 110.50.6StartCokeSodaCrispsEnd | Cannot accept 0.6Purchased cokePurchased sodaSorry, not enough moneyChange: 0.70 |
+| 110.50.6StartCokeSodaCrispsEnd | Cannot accept 0.6 Purchased coke Purchased soda Sorry, not enough money Change: 0.70 |
 
 # 8.Triangle of Numbers
 
@@ -115,7 +115,7 @@ Write a program, which receives a number – **n** , and prints a triangle from 
 
 | **Input** | **Output** |   | **Input** | **Output** |   | **Input** | **Output** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 3 | 12 2 3 3 3 | 5 | 12 2 3 3 34 4 4 45 5 5 5 5 | 6 | 12 2 3 3 34 4 4 45 5 5 5 56 6 6 6 6 6 |
+| 3 | 1 2 2 3 3 3 | 5 | 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 | 6 | 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 6 6 6 6 6 6 |
 
 # 9. **Padawan Equipment**
 
@@ -148,11 +148,11 @@ The output should be printed on the console.
 
 ### Examples
 
-| **Input** | **Output** | **Comments** |
+| **Input** | **Output** |
 | --- | --- | --- |
-| 10021.02.03.0 | The money is enough - it would cost 13.00lv. | Needed equipment for 2 padawans  :sabresPrice\*(studentsCount + 10%) + robesPrice \* (studentsCount) +beltsPrice\*(studentsCount-freeBelts)1\*(3) + 2\*(2) + 3\*(2) = 13.0013.00 \&lt;= 100 – the money will be enough. |
-| **Input** | **Output** | **Comments** |
-| 1004212.04.03.0 | Ivan Cho will need 737.00lv more. | Needed equipment for 42 padawans:12\*47 +4\*42 +3\*35 = 837.00837\&gt;100 – need 737.00 lv. more. |
+| 10021.02.03.0 | The money is enough - it would cost 13.00lv. |
+| **Input** | **Output** |
+| 1004212.04.03.0 | Ivan Cho will need 737.00lv more. |
 
 # 10.Rage Expenses
 
@@ -186,6 +186,6 @@ You will receive the price of each item in his gaming setup. Calculate his rage 
 
 | **Input** | **Output** | **Comment** |
 | --- | --- | --- |
-| 72345 | Rage expenses: 16.00 lv. | Trashed headset -\&gt; 3 timesTrashed mouse -\&gt; 2 timesTrashed keyboard -\&gt; 1 timeTotal: 6 + 6 + 4 = 16.00 lv; |
-| 2312.5021.5040200 | Rage expenses: 608.00 lv. |   |
+| 7 2 3 4 5 | Rage expenses: 16.00 lv. |
+| 23 12.50 21.50 40 200 | Rage expenses: 608.00 lv. |
 
