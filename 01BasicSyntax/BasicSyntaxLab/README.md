@@ -218,7 +218,7 @@ Print every row of the table in the following format:
 |   |   5 X 9 = 45 |
 |   |   5 X 10 = 50 | 
 | **Input** | **Output** |
-| 5 |   2 X 1 = 2 |
+| 2 |   2 X 1 = 2 |
 |   |   2 X 2 = 4 |
 |   |   2 X 3 = 6 |
 |   |   2 X 4 = 8 |
