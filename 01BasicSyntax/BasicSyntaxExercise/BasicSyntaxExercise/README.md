@@ -54,8 +54,13 @@ There are also discounts based on some conditions:
 
 | **Input** | **Output** |
 | --- | --- |
-| 30StudentsSunday | Total price: 266.73 |
-| 40RegularSaturday | Total price: 800.00 |
+| 30 | |
+| Students | |
+| Sunday | Total price: 266.73 |
+| **Input** | **Output** |
+| 40 | |
+| Regular | |
+| Saturday | Total price: 800.00 |
 
 # 4.Print and Sum
 
@@ -65,9 +70,14 @@ Write a program to display numbers from given start to given end and their sum. 
 
 | **Input** | **Output** |
 | --- | --- |
-| 510 | 5 6 7 8 9 10 Sum: 45 |
-| 026 | 0 1 2 … 26 Sum: 351 |
-| 5060 | 50 51 52 53 54 55 56 57 58 59 60 Sum: 605 |
+| 5 | 5 6 7 8 9 10 |
+|10 |  Sum: 45 |
+| **Input** | **Output** |
+| 0 | 0 1 2 … 26|
+| 26 |  Sum: 351 |
+| **Input** | **Output** |
+| 50 | 50 51 52 53 54 55 56 57 58 59 60 |
+| 60 |  Sum: 605 |
 
 # 5.Login
 
@@ -77,9 +87,19 @@ You will be given a string representing a username. The password will be that us
 
 | **Input** | **Output** |
 | --- | --- |
-| Acerlogingolet me inrecA  | Incorrect password. Try again. Incorrect password. Try again. Incorrect password. Try again. User Acer logged in.  |
+| Acer | |
+| login | Incorrect password. Try again.|
+| go | Incorrect password. Try again.|
+| let me in | Incorrect password. Try again.|
+| recA  |  User Acer logged in.|
+| **Input** | **Output** |
 | momoomom | User momo logged in. |
-| sunnyrainycloudysunnynot sunny | Incorrect password. Try again. Incorrect password. Try again. Incorrect password. Try again. User sunny blocked! |
+| **Input** | **Output** |
+| sunny | |
+| rainy | Incorrect password. Try again. |
+| cloudy | Incorrect password. Try again. |
+| sunny | Incorrect password. Try again. |
+| not sunny | User sunny blocked! |
 
 # 6.Strong Number
 
@@ -101,7 +121,15 @@ You task is to calculate the total price of a purchase from a vending machine. U
 
 | **Input** | **Output** |
 | --- | --- |
-| 110.50.6StartCokeSodaCrispsEnd | Cannot accept 0.6 Purchased coke Purchased soda Sorry, not enough money Change: 0.70 |
+| 1 | Cannot accept 0.6 |
+| 1 | Purchased coke |
+| 0.5 | Purchased soda |
+| 0.6 | Sorry, not enough money | 
+| Start | Change: 0.70 |
+| Coke |
+| Soda |
+| Crisps |
+| End |     
 
 # 8.Triangle of Numbers
 
@@ -113,9 +141,24 @@ Write a program, which receives a number – **n** , and prints a triangle from 
 
 ### Examples
 
-| **Input** | **Output** |   | **Input** | **Output** |   | **Input** | **Output** |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 3 | 1 2 2 3 3 3 | 5 | 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 | 6 | 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 6 6 6 6 6 6 |
+| **Input** | **Output** |
+| --- | --- |
+| 3 | 1   |
+|   | 2 2 |
+|   | 3 3 3 |
+| **Input** | **Output** |
+| 5 | 1 |
+|   | 2 2 |
+|   | 3 3 3 |
+|   | 4 4 4 4 |
+|   | 5 5 5 5 5 |
+| **Input** | **Output** |
+| 6 | 1 |
+|   | 2 2 |
+|   | 3 3 3 |
+|   | 4 4 4 4 |
+|   | 5 5 5 5 5 |
+|   | 6 6 6 6 6 6 |
 
 # 9. **Padawan Equipment**
 
@@ -149,10 +192,18 @@ The output should be printed on the console.
 ### Examples
 
 | **Input** | **Output** |
-| --- | --- | --- |
-| 10021.02.03.0 | The money is enough - it would cost 13.00lv. |
+| --- | --- |
+| 100 |
+| 2   |
+| 1.0 |
+| 2.0 |
+| 3.0 | The money is enough - it would cost 13.00lv. |
 | **Input** | **Output** |
-| 1004212.04.03.0 | Ivan Cho will need 737.00lv more. |
+| 100 |
+| 42 |
+| 12.0 |
+| 4.0 |
+| 3.0 | Ivan Cho will need 737.00lv more. |
 
 # 10.Rage Expenses
 
@@ -184,8 +235,17 @@ You will receive the price of each item in his gaming setup. Calculate his rage 
 
 ### Examples
 
-| **Input** | **Output** | **Comment** |
-| --- | --- | --- |
-| 7 2 3 4 5 | Rage expenses: 16.00 lv. |
-| 23 12.50 21.50 40 200 | Rage expenses: 608.00 lv. |
+| **Input** | **Output** |
+| --- | --- |
+| 7 |
+| 2 |
+| 3 |
+| 4 |
+| 5 | Rage expenses: 16.00 lv. |
+| **Input** | **Output** |
+| 23 |
+| 12.50 | 
+| 21.50 |
+| 40 |
+| 200 | Rage expenses: 608.00 lv. |
 
