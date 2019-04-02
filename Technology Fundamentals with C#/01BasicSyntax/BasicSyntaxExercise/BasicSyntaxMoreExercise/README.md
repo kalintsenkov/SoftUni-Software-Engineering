@@ -1,16 +1,24 @@
-1. 1.Sort Numbers
+# 1.Sort Numbers
 
  Read three real numbers and sort them in descending order. Print each number on a new line.
 
 ### Examples
 
-| **Input** | **Output** |   |
-| --- | --- | --- |
-| 213 | 321 |   |
-| -213 | 31-2 |   |
-| 002 | 200 |   |
+| **Input** | **Output** |
+| --- | --- |
+| 2 | 3 |
+| 1 | 2 |
+| 3 | 1 |
+| **Input** | **Output** |
+| -2 | 3 |
+| 1 | 1 |
+| 3 | -2 |
+| **Input** | **Output** |
+| 0 | 2 |
+| 0 | 0 |
+| 2 | 0 |
 
-1. 2.English Name of the Last Digit
+# 2.English Name of the Last Digit
 
 Write a **method** that returns the **English name** of the last digit of a given number. Write a program that reads an integer and prints the returned value from this method.
 
@@ -22,7 +30,7 @@ Write a **method** that returns the **English name** of the last digit of a give
 | 1 | one |
 | 1643 | three |
 
-1. 3.Gaming Store
+# 3.Gaming Store
 
 Write a program, whichhelps you buy the games. The **valid games** are the following games in this table:
 
@@ -35,7 +43,7 @@ Write a program, whichhelps you buy the games. The **valid games** are the follo
 | RoverWatch | $29.99 |
 | RoverWatch Origins Edition | $39.99 |
 
-On the first line, you will receive your **current balance** – a **floating-point** number in the range **[0.00…5000.00]**.
+On the first line, you will receive your **current balance** â€“ a **floating-point** number in the range **[0.00â€¦5000.00]**.
 
 Until you receive the command &quot; **Game Time**&quot;, you have to keep **buying games**. When a **game** is **bought** , the user&#39;s **balance** decreases by the **price** of the game.
 
@@ -46,19 +54,29 @@ Additionally, the program should obey the following conditions:
 - Alternatively, if the user is trying to buy a game which they **can&#39;t afford** , print &quot; **Too Expensive**&quot; and **read the next line**.
 - If the game exists and the player has the money for it, print **&quot;Bought {nameOfGame}&quot;**
 
-When you receive &quot; **Game Time**&quot;, **print** the user&#39;s **remaining money** and **total spent on games** , **rounded** to the **2**
+When you receive &quot; **Game Time**&quot;, **print** the user&#39;s **remaining money** and **total spent on games** , **rounded** to the **2**nd **decimal place**.
 
-# nd
- **decimal place**.
 ### Examples
 
 | **Input** | **Output** |
 | --- | --- |
-| 120RoverWatchHonored 2Game Time | Bought RoverWatchBought Honored 2Total spent: $89.98. Remaining: $30.02 |
-| 19.99Reimen originRoverWatchZplinter ZellGame Time | Not FoundToo ExpensiveBought Zplinter ZellOut of money! |
-| 79.99OutFall 4RoverWatch Origins EditionGame Time | Bought OutFall 4Bought RoverWatch Origins EditionTotal spent: $79.98. Remaining: $0.01 |
+| 120 | Bought RoverWatch |
+|RoverWatch| Bought Honored 2 |
+|Honored 2| Total spent: $89.98. Remaining: $30.02 |
+|Game Time |  |
+| **Input** | **Output** |
+| 19.99 | Not Found |
+|Reimen origin| Too Expensive |
+|RoverWatch| Bought Zplinter Zell |
+|Zplinter Zell| Out of money! |
+|Game Time |  |
+| **Input** | **Output** |
+| 79.99 | Bought OutFall 4 |
+|OutFall 4 | Bought RoverWatch Origins Edition |
+|RoverWatch Origins Edition | Total spent: $79.98. Remaining: $0.01 |
+|Game Time |  |
 
-1. 4.Reverse String
+# 4.Reverse String
 
 Write a program which reverses a string and print it on the console.
 
@@ -70,7 +88,7 @@ Write a program which reverses a string and print it on the console.
 | SoftUni | inUtfoS |
 | 1234 | 4321 |
 
-1. 5.Messages
+# 5.Messages
 
 Write a program, which emulates **typing an SMS** , following this guide:
 
@@ -84,61 +102,31 @@ Following the guide, **2** becomes &quot; **a**&quot;, **22** becomes &quot; **b
 
 ### Examples
 
-| **Input** | **Output** |   | **Input** | **Output** |   | **Input** | **Output** |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 54433555555666 | hello | 9443399908443377733 | hey there | 76333380633 | meet me |
-
-### Hints
-
-- A native approach would be to just put all the possible combinations of digits in a giant **switch** statement.
-- A cleverer approach would be to come up with a **mathematical formula** , which **converts** a **number** to its **alphabet** representation:
-
-| **Digit** | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|
-- **Index**
- |
-- 0 1 2
- |
-- 3 4 5
- |
-- 6 7 8
- |
-- 9 11 12
- |
-- 13 14 15
- |
-- 16 17 18 19
- |
-- 20 21 22
- |
-- 23 24 25 26
- |
-|
-- **Letter**
- |
-- a b c
- |
-- d e f
- |
-- g h i
- |
-- j  k  l
- |
-- m  n  o
- |
-- p  q  r  s
- |
-- t u v
- |
-- w  x  y  z
- |
-
-- Let&#39;s take the number **222** ( **c** ) for example. Our algorithm would look like this:
-  - Find the **number of digits** the number has &quot;e.g. **222**** 3 digits**&quot;
-  - Find the **main digit** of the number &quot;e.g.   **222**** 2**&quot;
-  - Find the **offset** of the number. To do that, you can use the formula: **(main digit - 2) \* 3**
-  - If the main digit is **8 or 9** , we need to **add 1** to the **offset** , since the digits **7** and **9** have **4 letters each**
-  - Finally, find the **letter index** (a 0, c 2, etc.). To do that, we can use the following formula: **(offset + digit length - 1)**.
-  - After we&#39;ve found the **letter index** , we can just add that to **the ASCII code** of the lowercase letter &quot; **a**&quot; (97)
-
+| **Input** | **Output** |
+| --- | --- |
+| 5 | hello |
+| 44 | |
+| 33 | |
+| 555 | |
+| 555 | |
+| 666 |  | 
+| **Input** | **Output** |
+| 9 | hey there|
+| 44 | |
+| 33 | |
+| 999 | |
+| 0 | |
+| 8 | |
+| 44 | |
+| 33 | |
+| 777 | |
+| 33 |  | 
+| **Input** | **Output** |
+| 7 | meet me |
+| 6 | |
+| 33 | |
+| 33 | |
+| 8 | |
+| 0 | |
+| 6 | |
+| 33 | |
