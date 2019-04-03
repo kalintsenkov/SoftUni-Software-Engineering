@@ -79,6 +79,7 @@ Examples
 |start of concert | =\> Keith Richards|
 |The Rolling Stones | =\> Bill Wyman    |     
 |                   | =\> Charlie Watts |                                                                                                                                                                                                                                                                                                                                                                                                                     |                   | =\> Ian Stewart |                                                                                                                                                                                      |
+| **Input** | **Output** |
 |Add; The Beatles; John Lennon, Paul McCartney |Total time: 7526|
 |Add; The Beatles; Paul McCartney, George Harrison |The Beatles -\> 7526|
 |Add; The Beatles; George Harrison, Ringo Starr |The Beatles|
@@ -165,6 +166,14 @@ Examples
 
 | **Input**                                                                                                     | **Output**                                                                                                                                              |
 |---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Eminem:VENOM Linkin park:NUMB Drake:NONSTOP Adele:HELLO end                                                   | Successful encryption: Ksotks\@BKTUS Successful encryption: Wtyvty alcv\@YFXM Successful encryption: Iwfpj\@STSXYTU Successful encryption: Fijqj\@MJQQT |
+| Eminem:VENOM | Successful encryption: Ksotks\@BKTUS |
+|Linkin park:NUMB | Successful encryption: Wtyvty alcv\@YFXM |
+|Drake:NONSTOP | Successful encryption: Iwfpj\@STSXYTU |
+|Adele:HELLO | Successful encryption: Fijqj\@MJQQT |
+|end |   |     
 | **Input**                                                                                                     | **Output**                                                                                                                                              |
-| Michael Jackson:ANOTHER PART OF ME Adele:ONE AND ONLY Guns n'roses:NOVEMBER RAIN Christina Aguilera: HuRt end | Invalid input! Successful encryption: Fijqj\@TSJ FSI TSQD Successful encryption: Sgze z'daeqe\@ZAHQYNQD DMUZ Invalid input!                             |
+| Michael Jackson:ANOTHER PART OF ME | Invalid input!|
+|Adele:ONE AND ONLY | Successful encryption: Fijqj\@TSJ FSI TSQD|
+|Guns n'roses:NOVEMBER RAIN | Successful encryption: Sgze z'daeqe\@ZAHQYNQD DMUZ|
+|Christina Aguilera: HuRt | Invalid input!|
+|end | |
