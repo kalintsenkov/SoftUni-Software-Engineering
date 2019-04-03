@@ -69,9 +69,23 @@ Examples
 
 | **Input**                                                                                                                                                                                                                                                                                                                                                                                                                               | **Output**                                                                                                                                                                                               |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Play; The Beatles; 2584 Add; The Beatles; John Lennon, Paul McCartney, George Harrison, Ringo Starr Add; Eagles; Glenn Frey, Don Henley, Bernie Leadon, Randy Meisner Play; Eagles; 1869 Add; The Rolling Stones; Brian Jones, Mick Jagger, Keith Richards Add; The Rolling Stones; Brian Jones, Mick Jagger, Keith Richards, Bill Wyman, Charlie Watts, Ian Stewart Play; The Rolling Stones; 4239 start of concert The Rolling Stones | Total time: 8692 The Rolling Stones -\> 4239 The Beatles -\> 2584 Eagles -\> 1869 The Rolling Stones =\> Brian Jones =\> Mick Jagger =\> Keith Richards =\> Bill Wyman =\> Charlie Watts =\> Ian Stewart |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                          |
-| Add; The Beatles; John Lennon, Paul McCartney Add; The Beatles; Paul McCartney, George Harrison Add; The Beatles; George Harrison, Ringo Starr Play; The Beatles; 3698 Play; The Beatles; 3828 start of concert The Beatles                                                                                                                                                                                                             | Total time: 7526 The Beatles -\> 7526 The Beatles =\> John Lennon =\> Paul McCartney =\> George Harrison =\> Ringo Starr                                                                                 |
+| Play; The Beatles; 2584 | Total time: 8692 |
+|Add; The Beatles; John Lennon, Paul McCartney, George Harrison, Ringo Starr |The Rolling Stones -\> 4239|
+|Add; Eagles; Glenn Frey, Don Henley, Bernie Leadon, Randy Meisner |The Beatles -\> 2584|
+|Play; Eagles; 1869 |Eagles -\> 1869|
+|Add; The Rolling Stones; Brian Jones, Mick Jagger, Keith Richards |The Rolling Stones|
+|Add; The Rolling Stones; Brian Jones, Mick Jagger, Keith Richards, Bill Wyman, Charlie Watts, Ian Stewart | =\> Brian Jones|
+|Play; The Rolling Stones; 4239 |  =\> Mick Jagger|
+|start of concert | =\> Keith Richards|
+|The Rolling Stones | =\> Bill Wyman    |     
+|                   | =\> Charlie Watts |                                                                                                                                                                                                                                                                                                                                                                                                                     |                   | =\> Ian Stewart |                                                                                                                                                                                      |
+|Add; The Beatles; John Lennon, Paul McCartney |Total time: 7526|
+|Add; The Beatles; Paul McCartney, George Harrison |The Beatles -\> 7526|
+|Add; The Beatles; George Harrison, Ringo Starr |The Beatles|
+|Play; The Beatles; 3698 | =\> John Lennon|
+|Play; The Beatles; 3828 |=\> Paul McCartney|
+|start of concert |=\> George Harrison|
+|The Beatles |   =\> Ringo Starr   |                                                                                                                                                                                                                                                                                           
 
 Problem 02. Song Encryption
 ===========================
