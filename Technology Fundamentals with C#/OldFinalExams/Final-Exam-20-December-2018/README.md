@@ -60,6 +60,7 @@ Examples
 | | WitHer 3 - Blood and Beer - 30.00 |
 | | Cyberfunk 2077 - 96.00 |
 | | FullLife 3 - 48.00 |
+|**Input**|**Output**|
 | Center Strike-14.99, FortLite-25, BattleShield 5-64.74, BattleShield 5:CoD edition, Dog of War-45, Dead Red Redemption-100, Dead Red Redemption:no DLC | BattleShield 5 - CoD edition - 38.84 | 
 | | Dead Red Redemption - no DLC - 60.00 |
 | | Dog of War - 36.00 | 
