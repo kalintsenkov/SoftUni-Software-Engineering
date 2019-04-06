@@ -6,11 +6,11 @@ After this you will have to check the words you have in the dictionary. Now you 
 
 **&quot;{word}:&quot;**
 
-**&quot; –{definition1}&quot;**
+**&quot; â€“{definition1}&quot;**
 
-**&quot; –{definition2}&quot;**
+**&quot; â€“{definition2}&quot;**
 
-**&quot; –{definition3}&quot;**
+**&quot; â€“{definition3}&quot;**
 
 **. . .**
 
@@ -18,7 +18,7 @@ In the end, you will receive one more command, which will be either **&quot;End&
 
 ## Input
 
-Three **strings**. The first one will have pairs of words and descriptions, separated by **&quot; | &quot;** and each word separated from its description by **&quot;: &quot;**. The second **string** will have only words, separated by **&quot; | &quot;**. The third **string** will be a command – either **&quot;End&quot;** or **&quot;List&quot;**.
+Three **strings**. The first one will have pairs of words and descriptions, separated by **&quot; | &quot;** and each word separated from its description by **&quot;: &quot;**. The second **string** will have only words, separated by **&quot; | &quot;**. The third **string** will be a command â€“ either **&quot;End&quot;** or **&quot;List&quot;**.
 
 ## Output
 
@@ -26,11 +26,11 @@ For **each word** that is called you have to print it **with all of its definiti
 
 **&quot;{word}:&quot;**
 
-**&quot; –{definition1}&quot;**
+**&quot; â€“{definition1}&quot;**
 
-**&quot; –{definition2}&quot;**
+**&quot; â€“{definition2}&quot;**
 
-**&quot; –{definition3}&quot;**
+**&quot; â€“{definition3}&quot;**
 
 **. . .**
 
@@ -38,15 +38,25 @@ For **each word** that is called you have to print it **with all of its definiti
 
 | **Input** |
 | --- |
-| programmer: an animal, which turns coffee into code | developer: a magicianPesho | GoshoList |
+| programmer: an animal, which turns coffee into code \| developer: a magician |
+| Pesho \| Gosho |
+| List |
 | **Output** |
 | developer programmer |
 
 | **Input** |
 | --- |
-| tackle: the equipment required for a task or sport | code: write code for a computer program | bit: a small piece, part, or quantity of something | tackle: make determined efforts to deal with a problem | bit: a short time or distancebit | code | tackleEnd |
+| tackle: the equipment required for a task or sport \| code: write code for a computer program \| bit: a small piece, part, or quantity of something \| tackle: make determined efforts to deal with a problem \| bit: a short time or distance |
+| bit \| code \| tackleEnd |
 | **Output** |
-| bit -a small piece, part, or quantity of something -a short time or distancecode -write code for a computer programtackle -make determined efforts to deal with a problem -the equipment required for a task or sport |
+| bit: |
+| &nbsp;-a small piece, part, or quantity of something |
+| &nbsp;-a short time or distance|
+| code: |
+| &nbsp;-write code for a computer program|
+| tackle: |
+| &nbsp;-make determined efforts to deal with a problem |
+| &nbsp;-the equipment required for a task or sport |
 
 # Problem 2. Deciphering
 
@@ -67,12 +77,14 @@ One line with the deciphered text.
 
 | **Input** |
 | --- |
-| wkhfn#|rx#jhqfkr#phf#exw#|rxu#uholf#lv#khfgohg#lq#hfrwkhu#sohfhwec an |
+| wkhfn#\|rx#jhqfkr#phf#exw#\|rxu#uholf#lv#khfgohg#lq#hfrwkhu#sohfhw|
+| ec an |
 | **Output** |
 | thank you gencho man but your relic is handled in another planet |
 
 | **Input** |
 | --- |
-| arx#vkdww#qrw#sdvvt l |
+| arx#vkdww#qrw#sdvv |
+| t l |
 | **Output** |
 | This is not the book you are looking for. |
