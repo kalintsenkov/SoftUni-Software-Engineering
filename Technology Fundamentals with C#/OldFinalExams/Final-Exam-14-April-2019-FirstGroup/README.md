@@ -98,21 +98,21 @@ In the end, print the collection **sorted by the count of the items** in **desce
 |Add->PeakSports->Map,Navigation,Compass|Stores list:|
 |Add->Paragon->Sunscreen|PeakSports|
 |Add->Groceries->Dried-fruit,Nuts|\<\<Map\>\>|
-|Add->Groceries->Nuts|<<Navigation>>|
-|Add->Paragon->Tent|<<Compass>>|
+|Add->Groceries->Nuts|\<\<Navigation\>\>|
+|Add->Paragon->Tent|\<\<Compass\>\>|
 |Remove->Paragon|Groceries|
-|Add->Pharmacy->Pain-killers|<<Dried-fruit>>|
-|END | |<<Nuts>>|
-| |<<Nuts>>|
+|Add->Pharmacy->Pain-killers|\<\<Dried-fruit\>\>|
+|END | |\<\<Nuts\>\>|
+| |\<\<Nuts\>\>|
 | |Pharmacy|
-| |<<Pain-killers>>|
+| |\<\<Pain-killers\>\>|
 | **Input** | **Output** |
 |Add->Peak->Waterproof,Umbrella|Stores list:|
 |Add->Groceries->Water,Juice,Food|Peak|
-|Add->Peak->Tent|<<Waterproof>>|
-|Add->Peak->Sleeping-Bag|<<Umbrella>>|
-|Add->Peak->Jacket|<<Tent>>|
-|Add->Groceries->Lighter|<<Sleeping-Bag>>|
-|Remove->Groceries|<<Jacket>>|
+|Add->Peak->Tent|\<\<Waterproof\>\>|
+|Add->Peak->Sleeping-Bag|\<\<Umbrella\>\>|
+|Add->Peak->Jacket|\<\<Tent\>\>|
+|Add->Groceries->Lighter|\<\<Sleeping-Bag\>\>|
+|Remove->Groceries|\<\<Jacket\>\>|
 |Remove->Store| |
 |END | |
