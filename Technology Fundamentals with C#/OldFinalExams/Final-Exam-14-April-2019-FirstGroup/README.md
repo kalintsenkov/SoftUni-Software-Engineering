@@ -97,7 +97,7 @@ In the end, print the collection **sorted by the count of the items** in **desce
 | --- | --- |
 |Add->PeakSports->Map,Navigation,Compass|Stores list:|
 |Add->Paragon->Sunscreen|PeakSports|
-|Add->Groceries->Dried-fruit,Nuts|<<Map>>|
+|Add->Groceries->Dried-fruit,Nuts|\<\<Map\>\>|
 |Add->Groceries->Nuts|<<Navigation>>|
 |Add->Paragon->Tent|<<Compass>>|
 |Remove->Paragon|Groceries|
