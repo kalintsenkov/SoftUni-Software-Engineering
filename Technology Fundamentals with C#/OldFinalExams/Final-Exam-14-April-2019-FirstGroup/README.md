@@ -102,7 +102,7 @@ In the end, print the collection **sorted by the count of the items** in **desce
 |Add->Paragon->Tent|\<\<Compass\>\>|
 |Remove->Paragon|Groceries|
 |Add->Pharmacy->Pain-killers|\<\<Dried-fruit\>\>|
-|END | |\<\<Nuts\>\>|
+|END|\<\<Nuts\>\>|
 | |\<\<Nuts\>\>|
 | |Pharmacy|
 | |\<\<Pain-killers\>\>|
