@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02FeedTheAnimals", "02FeedTheAnimals\02FeedTheAnimals.csproj", "{979B3A61-9422-409F-84DC-F098F220E20A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01AnimalSanctuary", "01AnimalSanctuary\01AnimalSanctuary.csproj", "{2C38391A-3ACD-4D1D-AF26-D029F7017A88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{979B3A61-9422-409F-84DC-F098F220E20A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979B3A61-9422-409F-84DC-F098F220E20A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979B3A61-9422-409F-84DC-F098F220E20A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979B3A61-9422-409F-84DC-F098F220E20A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C38391A-3ACD-4D1D-AF26-D029F7017A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C38391A-3ACD-4D1D-AF26-D029F7017A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C38391A-3ACD-4D1D-AF26-D029F7017A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C38391A-3ACD-4D1D-AF26-D029F7017A88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0717670D-78AD-4102-822B-658BDBE23D1A}
+	EndGlobalSection
+EndGlobal
