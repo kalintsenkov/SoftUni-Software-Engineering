@@ -194,7 +194,6 @@ On the last line, **print** only the **liters** in the **tank**.
 | **1** | Insufficient capacity! |
 | 1000  | 0 |
 | **Input** | **Output** |
-| --- | --- |
 | **7** | 105|
 |10||
 |20||
