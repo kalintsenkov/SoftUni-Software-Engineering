@@ -8,7 +8,7 @@ The bonus is calculated with the following **formula** :
 
 Round the number to **the nearest bigger number**. Find the student with the **maximum bonus** and print him/her, along with **his attendances** in the following format:
 
-**&quot;The maximum bonus score for this course is {maxBonusPoints}. The student has attended {studentAttendances} lectures.&quot;**
+**&quot;The maximum bonus score for this course is {maxBonusPoints}.The student has attended {studentAttendances} lectures.&quot;**
 
 ## Input / Consrtaints
 
@@ -151,17 +151,12 @@ You must **calculate the total points of each country**, which are the total poi
 
 In the end, print the countries with their points and their contestantswith their points, ordered by thetotal points for the countries in descending order, in the following format:
 
-{country}: {totalPointsForCountry}
-
--- {contestantName} -\> {contestantTotalPoints}
-
--- {contestantName} -\> {contestantTotalPoints}
-
-{country}: {totalPointsForCountry}
-
--- {contestantName} -\> {contestantTotalPoints}
-
--- {contestantName} -\> {contestantTotalPoints}
+**{country}: {totalPointsForCountry}**
+**&nbsp;-- {contestantName} -\> {contestantTotalPoints}**
+**&nbsp;-- {contestantName} -\> {contestantTotalPoints}**
+**{country}: {totalPointsForCountry}**
+**&nbsp;-- {contestantName} -\> {contestantTotalPoints}**
+**&nbsp;-- {contestantName} -\> {contestantTotalPoints}**
 
 …………………………………………………
 
