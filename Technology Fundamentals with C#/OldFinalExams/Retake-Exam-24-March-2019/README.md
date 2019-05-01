@@ -152,10 +152,15 @@ You must **calculate the total points of each country**, which are the total poi
 In the end, print the countries with their points and their contestantswith their points, ordered by thetotal points for the countries in descending order, in the following format:
 
 **{country}: {totalPointsForCountry}**
+
 **&nbsp;-- {contestantName} -\> {contestantTotalPoints}**
+
 **&nbsp;-- {contestantName} -\> {contestantTotalPoints}**
+
 **{country}: {totalPointsForCountry}**
+
 **&nbsp;-- {contestantName} -\> {contestantTotalPoints}**
+
 **&nbsp;-- {contestantName} -\> {contestantTotalPoints}**
 
 …………………………………………………
