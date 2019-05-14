@@ -1,0 +1,14 @@
+﻿@model List<TweetViewModel>
+@{
+    ViewData["Title"] = "ByHashtag";
+}
+
+<h1>ByHashtag</h1>
+@foreach (var tweet in Model)
+{
+    <div>
+        <strong>@tweet.Username:</strong>
+        @tweet.Text
+        <em>(@tweet.CreatedOn)</em>
+    </div>
+}
