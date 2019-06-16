@@ -8,7 +8,7 @@
     {
         private List<Salad> salads;
 
-        public string Name { get; set; }
+        public string Name { get; private set; }
 
         public Restaurant(string name)
         {
