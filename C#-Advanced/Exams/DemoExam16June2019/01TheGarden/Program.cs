@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Text;
 
@@ -61,24 +61,21 @@ namespace _01TheGarden
 
                     if (IsInsideGarden(garden, row, col))
                     {
-                        if (garden[row][col] != ' ')
+                        if (direction == "up")
                         {
-                            if (direction == "up")
-                            {
-                                harmedVegetablesCount = MoveUp(harmedVegetablesCount, garden, row, col);
-                            }
-                            else if (direction == "down")
-                            {
-                                harmedVegetablesCount = MoveDown(harmedVegetablesCount, garden, row, col);
-                            }
-                            else if (direction == "left")
-                            {
-                                harmedVegetablesCount = MoveLeft(harmedVegetablesCount, garden, row, col);
-                            }
-                            else if (direction == "right")
-                            {
-                                harmedVegetablesCount = MoveRight(harmedVegetablesCount, garden, row, col);
-                            }
+                            harmedVegetablesCount = MoveUp(harmedVegetablesCount, garden, row, col);
+                        }
+                        else if (direction == "down")
+                        {
+                            harmedVegetablesCount = MoveDown(harmedVegetablesCount, garden, row, col);
+                        }
+                        else if (direction == "left")
+                        {
+                            harmedVegetablesCount = MoveLeft(harmedVegetablesCount, garden, row, col);
+                        }
+                        else if (direction == "right")
+                        {
+                            harmedVegetablesCount = MoveRight(harmedVegetablesCount, garden, row, col);
                         }
                     }
                 }
