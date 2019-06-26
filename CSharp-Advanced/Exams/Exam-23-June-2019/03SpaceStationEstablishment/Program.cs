@@ -11,27 +11,21 @@ namespace _02
 
         public static void Main()
         {
-            int matrixSize = int.Parse(Console.ReadLine()); // always square 
+            var matrixSize = int.Parse(Console.ReadLine()); 
 
             var galaxy = new char[matrixSize, matrixSize];
 
             InitializeGalaxy(matrixSize, galaxy);
 
-            bool isWon = false;
+            var isWon = false;
 
             while (true)
             {
-                string direction = Console.ReadLine();
+                var direction = Console.ReadLine();
 
                 galaxy[playerRow, playerCol] = '-';
 
-                switch (direction)
-                {
-                    case "up": playerRow--; break;
-                    case "down": playerRow++; break;
-                    case "left": playerCol--; break;
-                    case "right": playerCol++; break;
-                }
+                MovePlayer(direction);
 
                 if (IsOutOfTheGalaxy(galaxy))
                 {
@@ -61,7 +55,7 @@ namespace _02
                 }
             }
 
-            string result = PrintOutput(galaxy, isWon);
+            var result = PrintOutput(galaxy, isWon);
 
             Console.WriteLine(result);
         }
@@ -85,7 +79,39 @@ namespace _02
                 }
             }
         }
-
+        
+        private static void MovePlayer(string direction)
+        {
+            switch (direction)
+            {
+                case "up": playerRow--; break;
+                case "down": playerRow++; break;
+                case "left": playerCol--; break;
+                case "right": playerCol++; break;
+            }
+        }
+        
+        private static bool IsOutOfTheGalaxy(char[,] galaxy)
+        {
+            return playerRow < 0 || playerRow >= galaxy.GetLength(0)
+                || playerCol < 0 || playerCol >= galaxy.GetLength(1);
+        }
+        
+        private static void ChangePosition(char[,] galaxy)
+        {
+            for (int row = 0; row < galaxy.GetLength(0); row++)
+            {
+                for (int col = 0; col < galaxy.GetLength(1); col++)
+                {
+                    if (galaxy[row, col] == 'O')
+                    {
+                        playerRow = row;
+                        playerCol = col;
+                    }
+                }
+            }
+        }
+        
         private static string PrintOutput(char[,] galaxy, bool isWon)
         {
             var result = new StringBuilder();
@@ -116,27 +142,6 @@ namespace _02
                 }
                 result.AppendLine();
             }
-        }
-
-        private static void ChangePosition(char[,] galaxy)
-        {
-            for (int row = 0; row < galaxy.GetLength(0); row++)
-            {
-                for (int col = 0; col < galaxy.GetLength(1); col++)
-                {
-                    if (galaxy[row, col] == 'O')
-                    {
-                        playerRow = row;
-                        playerCol = col;
-                    }
-                }
-            }
-        }
-
-        private static bool IsOutOfTheGalaxy(char[,] galaxy)
-        {
-            return playerRow < 0 || playerRow >= galaxy.GetLength(0)
-                || playerCol < 0 || playerCol >= galaxy.GetLength(1);
         }
     }
 }
