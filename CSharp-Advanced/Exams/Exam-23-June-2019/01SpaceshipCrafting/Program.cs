@@ -29,45 +29,37 @@ namespace _01
 
             while (liquids.Any() && items.Any())
             {
-                int currentLiquid = liquids.Peek();
-                int currentItem = items.Peek();
+                int currentLiquid = liquids.Dequeue();
+                int currentItem = items.Pop();
 
                 if (currentLiquid + currentItem == 25) // Glass
                 {
                     glassCount++;
-                    liquids.Dequeue();
-                    items.Pop();
                 }
                 else if (currentLiquid + currentItem == 50) // Aluminium
                 {
                     aluminiumCount++;
-                    liquids.Dequeue();
-                    items.Pop();
                 }
                 else if (currentLiquid + currentItem == 75) // Lithium
                 {
                     lithiumCount++;
-                    liquids.Dequeue();
-                    items.Pop();
                 }
                 else if (currentLiquid + currentItem == 100) // Carbon fiber
                 {
                     carbonCount++;
-                    liquids.Dequeue();
-                    items.Pop();
                 }
                 else
                 {
-                    liquids.Dequeue();
-                    items.Push(items.Pop() + 3);
+                    items.Push(currentItem + 3);
                 }
             }
 
-            string result = PrintOutput(glassCount, 
-                aluminiumCount, 
-                lithiumCount, 
-                carbonCount, 
-                liquids, 
+            string result = PrintOutput(
+                glassCount,
+                aluminiumCount,
+                lithiumCount,
+                carbonCount,
+                liquids,
                 items);
 
             Console.WriteLine(result);
