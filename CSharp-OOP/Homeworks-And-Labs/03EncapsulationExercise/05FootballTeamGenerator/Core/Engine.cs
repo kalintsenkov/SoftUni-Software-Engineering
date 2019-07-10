@@ -41,7 +41,6 @@
                         var player = this.CreatePlayer(command);
                         var team = this.teams.FirstOrDefault(x => x.Name == teamName);
 
-
                         team.AddPlayer(player);
                     }
                     else if (command.Name == "Remove")
@@ -51,7 +50,6 @@
                         var playerName = command.Arguments[1];
 
                         var team = this.teams.FirstOrDefault(x => x.Name == teamName);
-
 
                         team.RemovePlayer(playerName);
                     }
