@@ -14,7 +14,7 @@
         {
             if (animal.ProcedureTime < procedureTime)
             {
-                throw new ArgumentException(ExceptionMessages.NotEnoughProcedureTimeException);
+                throw new ArgumentException(ExceptionMessages.NotEnoughProcedureTime);
             }
 
             this.AddAnimalProcedure(animal);

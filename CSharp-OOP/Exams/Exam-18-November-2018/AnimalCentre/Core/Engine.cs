@@ -38,7 +38,7 @@
             {
                 try
                 {
-                    this.ExecudeCommands(input);
+                    this.ExecuteCommands(input);
                 }
                 catch (ArgumentException ae)
                 {
@@ -57,7 +57,7 @@
             this.dataWriter.WriteLine(adoptedAnimals);
         }
 
-        private void ExecudeCommands(string input)
+        private void ExecuteCommands(string input)
         {
             var command = this.commandParser.Parse(input);
 

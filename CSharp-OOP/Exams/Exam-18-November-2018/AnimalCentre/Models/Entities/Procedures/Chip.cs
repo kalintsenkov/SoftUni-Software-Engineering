@@ -13,13 +13,13 @@
         {
             if (animal.ProcedureTime < procedureTime)
             {
-                throw new ArgumentException(ExceptionMessages.NotEnoughProcedureTimeException);
+                throw new ArgumentException(ExceptionMessages.NotEnoughProcedureTime);
             }
 
             if (animal.IsChipped)
             {
                 throw new ArgumentException(
-                    string.Format(ExceptionMessages.AnimalAlreadyChippedException, animal.Name));
+                    string.Format(ExceptionMessages.AnimalAlreadyChipped, animal.Name));
             }
 
             this.AddAnimalProcedure(animal);

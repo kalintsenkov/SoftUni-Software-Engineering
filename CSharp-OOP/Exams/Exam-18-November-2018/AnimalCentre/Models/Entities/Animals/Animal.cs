@@ -28,7 +28,7 @@
             {
                 if (value < 0 || value > 100)
                 {
-                    throw new ArgumentException(ExceptionMessages.InvalidEnergyException);
+                    throw new ArgumentException(ExceptionMessages.InvalidEnergy);
                 }
 
                 this.energy = value;
@@ -42,7 +42,7 @@
             {
                 if (value < 0 || value > 100)
                 {
-                    throw new ArgumentException(ExceptionMessages.InvalidHappinesException);
+                    throw new ArgumentException(ExceptionMessages.InvalidHappines);
                 }
 
                 this.happiness = value;
