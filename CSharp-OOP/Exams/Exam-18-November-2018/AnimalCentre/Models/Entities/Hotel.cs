@@ -25,7 +25,7 @@
             if (this.Animals.Count == Capacity)
             {
                 throw new InvalidOperationException(
-                    ExceptionMessages.NotEnoughCapacityException);
+                    ExceptionMessages.NotEnoughCapacity);
             }
 
             if (this.animals.Any(x => x.Key == animal.Name))
