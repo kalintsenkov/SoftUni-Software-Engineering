@@ -59,8 +59,6 @@
             return string.Format(OutputMessages.AnimalHadChipProcedure, animal.Name);
         }
 
-        
-
         public string Vaccinate(string name, int procedureTime)
         {
             var animal = this.animals.FirstOrDefault(x => x.Name == name);
