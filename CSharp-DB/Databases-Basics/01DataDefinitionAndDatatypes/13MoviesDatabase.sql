@@ -34,24 +34,24 @@ CREATE TABLE Movies
 
 INSERT INTO Directors(DirectorName, Notes)
 VALUES		('Pesho', NULL),
-			('Gosho', NULL),
-			('Kiro', NULL),
-			('Ivan', 'Hi!!!'),
-			('Test', 'How are you?')
+		('Gosho', NULL),
+		('Kiro', NULL),
+		('Ivan', 'Hi!!!'),
+		('Test', 'How are you?')
 
 INSERT INTO Genres(GenreName, Notes)
 VALUES		('Romantic', NULL),
-			('Drama', NULL),
-			('Action', NULL),
-			('Thriller', NULL),
-			('Comedy', NULL)
+		('Drama', NULL),
+		('Action', NULL),
+		('Thriller', NULL),
+		('Comedy', NULL)
 
 INSERT INTO Categories(CategoryName, Notes)
 VALUES		('Category1', NULL),
-			('Category2', NULL),
-			('Category3', NULL),
-			('Category4', NULL),
-			('Category5', NULL)
+		('Category2', NULL),
+		('Category3', NULL),
+		('Category4', NULL),
+		('Category5', NULL)
 
 INSERT INTO Movies
 			(Title, DirectorId, CopyrightYear, [Length], GenreId, CategoryId, Rating, Notes)
