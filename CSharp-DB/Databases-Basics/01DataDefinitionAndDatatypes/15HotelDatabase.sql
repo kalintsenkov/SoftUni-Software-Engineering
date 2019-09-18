@@ -83,18 +83,18 @@ VALUES
 
 INSERT INTO RoomStatus(RoomStatus, Notes)
 VALUES		('Status1', NULL),
-			('Status2', NULL),
-			('Status3', NULL)
+		('Status2', NULL),
+		('Status3', NULL)
 
 INSERT INTO RoomTypes(RoomType, Notes)
 VALUES		('Type1', NULL),
-			('Type2', NULL),
-			('Type3', NULL)
+		('Type2', NULL),
+		('Type3', NULL)
 
 INSERT INTO BedTypes(BedType, Notes)
 VALUES		('Bed1', NULL),
-			('Bed2', NULL),
-			('Bed3', NULL)
+		('Bed2', NULL),
+		('Bed3', NULL)
 
 INSERT INTO Rooms
 			(RoomType, BedType, Rate, RoomStatus, Notes)
