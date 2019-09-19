@@ -67,56 +67,56 @@ CREATE TABLE Occupancies (
 )
 
 INSERT INTO Employees
-			(FirstName, LastName, Title, Notes)
-VALUES
-			('Kiro', 'Kirov', 'employee1', NULL),
-			('Ivan', 'Ivanov', 'employee2', NULL),
-			('Pesho', 'Peshev', 'employee3', NULL)
+	    (FirstName, LastName, Title, Notes)
+VALUES	    
+	    ('Kiro', 'Kirov', 'employee1', NULL),
+	    ('Ivan', 'Ivanov', 'employee2', NULL),
+	    ('Pesho', 'Peshev', 'employee3', NULL)
 
 INSERT INTO Customers
-			(FirstName, LastName, PhoneNumber,
-			EmergencyName, EmergencyNumber, Notes)
-VALUES
-			('Toshko', 'Toshkov', 123456, NULL, NULL, NULL),
-			('Stamat', 'Stamatov', 654321, NULL, NULL, NULL),
-			('Gosho', 'Goshov', 223341, NULL, NULL, NULL)
+	    (FirstName, LastName, PhoneNumber,
+	    EmergencyName, EmergencyNumber, Notes)
+VALUES	    
+	    ('Toshko', 'Toshkov', 123456, NULL, NULL, NULL),
+	    ('Stamat', 'Stamatov', 654321, NULL, NULL, NULL),
+	    ('Gosho', 'Goshov', 223341, NULL, NULL, NULL)
 
 INSERT INTO RoomStatus(RoomStatus, Notes)
-VALUES		('Status1', NULL),
-		('Status2', NULL),
-		('Status3', NULL)
+VALUES	    ('Status1', NULL),
+	    ('Status2', NULL),
+	    ('Status3', NULL)
 
 INSERT INTO RoomTypes(RoomType, Notes)
-VALUES		('Type1', NULL),
-		('Type2', NULL),
-		('Type3', NULL)
+VALUES	    ('Type1', NULL),
+	    ('Type2', NULL),
+	    ('Type3', NULL)
 
 INSERT INTO BedTypes(BedType, Notes)
-VALUES		('Bed1', NULL),
-		('Bed2', NULL),
-		('Bed3', NULL)
+VALUES	    ('Bed1', NULL),
+	    ('Bed2', NULL),
+	    ('Bed3', NULL)
 
 INSERT INTO Rooms
-			(RoomType, BedType, Rate, RoomStatus, Notes)
-VALUES 
-			('Type1', 'Bed1', 7.25, 'Status1', NULL),
-			('Type2', 'Bed2', 8.30, 'Status2', NULL),
-			('Type3', 'Bed3', 9.20, 'Status3', NULL)
+	    (RoomType, BedType, Rate, RoomStatus, Notes)
+VALUES     
+	    ('Type1', 'Bed1', 7.25, 'Status1', NULL),
+	    ('Type2', 'Bed2', 8.30, 'Status2', NULL),
+	    ('Type3', 'Bed3', 9.20, 'Status3', NULL)
 
 INSERT INTO Payments
-			(EmployeeId, PaymentDate, AccountNumber, 
-			FirstDateOccupied, LastDateOccupied, 
-			TotalDays, AmountCharged, TaxRate, 
-			TaxAmount, PaymentTotal, Notes)
-VALUES
-			(1, '2005-05-10', 1, '2005-05-05', '2005-05-10', 5, 305.50, 5.5, 35.72, 341.22, NULL),
-			(2, '2007-07-15', 2, '2007-07-21', '2007-07-15', 6, 301.00, 6.5, 15.20, 316.20, NULL),
-			(3, '2012-02-09', 3, '2012-02-16', '2012-02-09', 7, 450.25, 8.3, 25.20, 475.45, NULL)
+            (EmployeeId, PaymentDate, AccountNumber, 
+            FirstDateOccupied, LastDateOccupied, 
+            TotalDays, AmountCharged, TaxRate, 
+            TaxAmount, PaymentTotal, Notes)
+VALUES            
+            (1, '2005-05-10', 1, '2005-05-05', '2005-05-10', 5, 305.50, 5.5, 35.72, 341.22, NULL),
+            (2, '2007-07-15', 2, '2007-07-21', '2007-07-15', 6, 301.00, 6.5, 15.20, 316.20, NULL),
+            (3, '2012-02-09', 3, '2012-02-16', '2012-02-09', 7, 450.25, 8.3, 25.20, 475.45, NULL)
 
 INSERT INTO Occupancies
-			(EmployeeId, DateOccupied, AccountNumber,
-			 RoomNumber, RateApplied, PhoneCharge, Notes)
-VALUES
-			(1, '2019-09-15', 1, 1, NULL, 15.90, NULL),
-			(3, '2015-07-16', 3, 3, 7.50, 16.20, NULL),
-			(2, '1999-05-16', 2, 2, 8.32, 12.35, NULL)
+	    (EmployeeId, DateOccupied, AccountNumber,
+	     RoomNumber, RateApplied, PhoneCharge, Notes)
+VALUES    
+	    (1, '2019-09-15', 1, 1, NULL, 15.90, NULL),
+	    (3, '2015-07-16', 3, 3, 7.50, 16.20, NULL),
+	    (2, '1999-05-16', 2, 2, 8.32, 12.35, NULL)
