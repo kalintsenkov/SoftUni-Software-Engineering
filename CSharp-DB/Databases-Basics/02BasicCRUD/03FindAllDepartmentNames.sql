@@ -1,0 +1,2 @@
+SELECT [Name]
+  FROM Departments
