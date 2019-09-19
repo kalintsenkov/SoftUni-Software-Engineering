@@ -1,4 +1,4 @@
 SELECT FirstName,
-	   LastName,
-	   Salary
+       LastName,
+       Salary
   FROM Employees
