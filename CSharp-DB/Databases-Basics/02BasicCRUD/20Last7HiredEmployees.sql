@@ -1,6 +1,6 @@
   SELECT TOP(7) 
          FirstName,
          LastName,
-	     HireDate
+         HireDate
     FROM Employees
 ORDER BY HireDate DESC
