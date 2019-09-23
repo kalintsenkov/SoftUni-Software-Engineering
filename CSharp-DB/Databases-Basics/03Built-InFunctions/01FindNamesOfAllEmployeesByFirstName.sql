@@ -1,4 +1,4 @@
 SELECT FirstName,
-	   LastName
+       LastName
   FROM Employees
  WHERE FirstName LIKE 'SA%'
