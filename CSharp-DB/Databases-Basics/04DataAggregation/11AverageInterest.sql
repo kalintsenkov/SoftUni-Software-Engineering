@@ -1,5 +1,5 @@
   SELECT DepositGroup,
-		 IsDepositExpired,
+	 IsDepositExpired,
          AVG(DepositInterest) AS [AverageInterest]
     FROM WizzardDeposits
    WHERE DepositStartDate > '1985-01-01'
