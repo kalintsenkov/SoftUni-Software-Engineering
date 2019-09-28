@@ -7,6 +7,6 @@ SELECT TOP(10)
               AS [AverageSalary]
             FROM Employees
         GROUP BY DepartmentID) AS g, 
-	Employees AS e
+	         Employees AS e
   WHERE e.DepartmentID = g.DepartmentID 
     AND e.Salary > g.AverageSalary
