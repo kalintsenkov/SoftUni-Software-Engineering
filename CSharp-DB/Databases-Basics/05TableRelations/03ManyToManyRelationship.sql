@@ -30,17 +30,17 @@ CREATE TABLE StudentsExams
 INSERT INTO Students([Name])
 VALUES      ('Mila'),
             ('Toni'),
-			('Ron')
+            ('Ron')
 
 INSERT INTO Exams(ExamID ,[Name])
 VALUES      (101, 'SpringMVC'),
             (102, 'Neo4j'),
-			(103, 'Oracle 11g')
+	    (103, 'Oracle 11g')
 
 INSERT INTO StudentsExams(StudentID, ExamID)
 VALUES      (1, 101),
             (1, 102),
-			(2, 101),
-			(3, 103),
-			(2, 102),
-			(2, 103)
+	    (2, 101),
+	    (3, 103),
+	    (2, 102),
+	    (2, 103)
