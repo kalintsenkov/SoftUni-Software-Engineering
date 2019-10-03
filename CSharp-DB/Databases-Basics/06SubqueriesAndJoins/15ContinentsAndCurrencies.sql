@@ -3,7 +3,7 @@
          k.CurrencyUsage
     FROM (  SELECT [cont].ContinentCode,
                    [count].CurrencyCode,
-          		   COUNT([count].CurrencyCode)
+          		     COUNT([count].CurrencyCode)
           	    AS [CurrencyUsage],
           	       DENSE_RANK() OVER (PARTITION BY [cont].ContinentCode ORDER BY COUNT([count].CurrencyCode) DESC)
                 AS [Rank]
