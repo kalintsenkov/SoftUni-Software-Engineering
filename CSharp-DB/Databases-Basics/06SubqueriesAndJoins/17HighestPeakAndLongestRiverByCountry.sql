@@ -1,6 +1,7 @@
-   SELECT TOP(5) c.CountryName,
+   SELECT TOP(5) 
+          c.CountryName,
           MAX(p.Elevation) AS [HighestPeakElevation],
-		  MAX(r.[Length]) AS [LongestRiverLength]
+          MAX(r.[Length]) AS [LongestRiverLength]
      FROM Countries AS c
 FULL JOIN MountainsCountries AS mc
        ON mc.CountryCode = c.CountryCode
@@ -15,4 +16,4 @@ FULL JOIN Rivers AS r
  GROUP BY c.CountryName
  ORDER BY HighestPeakElevation DESC,
           LongestRiverLength DESC,
-		  c.CountryName
+	  c.CountryName
