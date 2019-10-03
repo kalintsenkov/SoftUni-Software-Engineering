@@ -6,6 +6,7 @@ SELECT e.EmployeeID,
 END AS [ProjectName]
   FROM Employees AS e
   JOIN EmployeesProjects AS ep
-    ON ep.EmployeeID = e.EmployeeID AND e.EmployeeID = 24
+    ON ep.EmployeeID = e.EmployeeID 
+   AND e.EmployeeID = 24
   JOIN Projects AS p
     ON p.ProjectID = ep.ProjectID
