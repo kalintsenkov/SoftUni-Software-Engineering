@@ -2,7 +2,7 @@ SELECT e.EmployeeID,
        e.FirstName,
   CASE
        WHEN p.StartDate >= CAST('2005' AS DATE) THEN NULL
-	   ELSE p.[Name]
+       ELSE p.[Name]
 END AS [ProjectName]
   FROM Employees AS e
   JOIN EmployeesProjects AS ep
