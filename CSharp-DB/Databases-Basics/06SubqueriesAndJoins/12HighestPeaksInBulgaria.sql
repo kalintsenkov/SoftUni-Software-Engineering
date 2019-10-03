@@ -1,7 +1,7 @@
   SELECT mc.CountryCode,
          m.MountainRange,
-		 p.PeakName,
-		 p.Elevation
+	 p.PeakName,
+	 p.Elevation
     FROM Peaks AS p
     JOIN Mountains AS m
       ON m.Id = p.MountainId
