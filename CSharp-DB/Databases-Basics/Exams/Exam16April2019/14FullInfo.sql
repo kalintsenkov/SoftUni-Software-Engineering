@@ -15,6 +15,6 @@
       ON lt.Id = l.LuggageTypeId
 ORDER BY [Full Name],
          pl.[Name],
-		 f.Origin,
-		 f.Destination,
-		 lt.[Type]
+	 f.Origin,
+	 f.Destination,
+	 lt.[Type]
