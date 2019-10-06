@@ -10,4 +10,4 @@ FULL JOIN Planes AS p
           p.Seats
  ORDER BY [Passengers Count] DESC,
           p.[Name],
-		  p.Seats
+	  p.Seats
