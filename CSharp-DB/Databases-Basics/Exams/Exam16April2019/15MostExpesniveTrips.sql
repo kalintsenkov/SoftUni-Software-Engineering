@@ -1,12 +1,12 @@
   SELECT r.FirstName,
          r.LastName,
-  	     r.Destination,
-  	     r.Price
+  	 r.Destination,
+  	 r.Price
     FROM (SELECT p.FirstName,
                  p.LastName,
-  	             f.Destination,
-  	             t.Price,
-  	             DENSE_RANK() OVER (PARTITION BY p.FirstName, p.LastName ORDER BY t.Price DESC) 
+  	         f.Destination,
+  	         t.Price,
+  	         DENSE_RANK() OVER (PARTITION BY p.FirstName, p.LastName ORDER BY t.Price DESC) 
               AS [Price Rank]
             FROM Passengers AS p
             JOIN Tickets AS t
@@ -16,5 +16,5 @@
    WHERE r.[Price Rank] = 1
 ORDER BY r.Price DESC,
          r.FirstName,
-		 r.LastName,
-		 r.Destination
+         r.LastName,
+         r.Destination
