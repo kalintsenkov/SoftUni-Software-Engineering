@@ -3,6 +3,7 @@ RETURNS NVARCHAR(10)
 AS
 BEGIN
 	DECLARE @salaryLevel NVARCHAR(10)
+	
 	IF (@salary < 30000)
 	BEGIN
 		SET @salaryLevel = 'Low'
