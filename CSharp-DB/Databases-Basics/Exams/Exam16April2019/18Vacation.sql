@@ -3,7 +3,7 @@ RETURNS NVARCHAR(MAX)
 AS
 BEGIN
 	DECLARE @count INT 
-    DECLARE @sum DECIMAL(15, 2)
+    	DECLARE @sum DECIMAL(15, 2)
 
 	IF (@peopleCount <= 0)
 	BEGIN
@@ -11,25 +11,25 @@ BEGIN
 	END
 
 	SET @count = ( SELECT COUNT(*)
-				     FROM Tickets AS t
-				     JOIN Flights AS f
-				       ON f.Id = t.FlightId
-				    WHERE f.Origin = @origin
-				      AND f.Destination = @destination)
+		         FROM Tickets AS t
+		         JOIN Flights AS f
+		           ON f.Id = t.FlightId
+		        WHERE f.Origin = @origin
+		          AND f.Destination = @destination)
 
-    IF (@count = 0)
+    	IF (@count = 0)
 	BEGIN
 		RETURN 'Invalid flight!'
 	END
 	
 	SET @sum = ( SELECT t.Price
-				   FROM Tickets AS t
-				   JOIN Flights AS f
-				     ON f.Id = t.FlightId
-				  WHERE f.Origin = @origin
-				    AND f.Destination = @destination)
+		       FROM Tickets AS t
+		       JOIN Flights AS f
+		         ON f.Id = t.FlightId
+		      WHERE f.Origin = @origin
+		        AND f.Destination = @destination)
 
-    SET @sum *= @peopleCount
+    	SET @sum *= @peopleCount
 
 	RETURN 'Total price ' + CAST(@sum AS NVARCHAR)
 END
