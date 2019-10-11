@@ -1,4 +1,4 @@
   SELECT tc.CardNumber,
-		 tc.JobDuringJourney
+	 tc.JobDuringJourney
     FROM TravelCards AS tc
 ORDER BY tc.CardNumber
