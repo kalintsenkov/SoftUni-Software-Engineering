@@ -4,9 +4,9 @@
   	     CONVERT(DECIMAL(3, 2), r.AvgGrade) AS [Grade]
   	FROM (  SELECT CONCAT(t.FirstName, ' ', t.LastName) AS [Teacher Full Name],
   	               su.[Name] AS [Subject Name],
-  	  		       CONCAT(s.FirstName, ' ', s.LastName) AS [Student Full Name],
-  	  		       AVG(ss.Grade) AS [AvgGrade],
-			       DENSE_RANK() OVER (PARTITION BY t.FirstName, t.LastName ORDER BY AVG(ss.Grade) DESC) AS [Rank]
+  	  	       CONCAT(s.FirstName, ' ', s.LastName) AS [Student Full Name],
+  	  	       AVG(ss.Grade) AS [AvgGrade],
+		       DENSE_RANK() OVER (PARTITION BY t.FirstName, t.LastName ORDER BY AVG(ss.Grade) DESC) AS [Rank]
   	          FROM Teachers AS t
   	      	  JOIN StudentsTeachers AS st
   	      	    ON st.TeacherId = t.Id
