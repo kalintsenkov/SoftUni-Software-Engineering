@@ -3,6 +3,6 @@ AS
 BEGIN
 	INSERT INTO ExcludedStudents(StudentId, StudentName)
 	     SELECT d.Id,
-				d.FirstName + ' ' + d.LastName
-		   FROM deleted AS d
+		    d.FirstName + ' ' + d.LastName
+	       FROM deleted AS d
 END
