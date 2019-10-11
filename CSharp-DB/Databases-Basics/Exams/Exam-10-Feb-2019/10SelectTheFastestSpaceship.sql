@@ -1,5 +1,5 @@
   SELECT TOP(1) ss.[Name] AS [SpaceshipName],
-		 sp.[Name] AS [SpaceportName]
+	 sp.[Name] AS [SpaceportName]
     FROM Journeys AS j
     JOIN Spaceships AS ss
       ON ss.Id = j.SpaceshipId
