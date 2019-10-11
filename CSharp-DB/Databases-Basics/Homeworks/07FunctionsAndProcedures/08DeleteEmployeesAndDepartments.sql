@@ -30,5 +30,5 @@ BEGIN
 
 	 SELECT COUNT(*)
 	   FROM Employees
-      WHERE DepartmentID = @departmentId
+          WHERE DepartmentID = @departmentId
 END
