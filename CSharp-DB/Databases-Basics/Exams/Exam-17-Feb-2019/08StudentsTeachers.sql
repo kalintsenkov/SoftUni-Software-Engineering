@@ -1,6 +1,6 @@
   SELECT s.FirstName,
-		 s.LastName,
-		 COUNT(TeacherId) AS [TeachersCount]
+	 s.LastName,
+	 COUNT(TeacherId) AS [TeachersCount]
     FROM StudentsTeachers AS st
     JOIN Students AS s
       ON s.Id = st.StudentId
