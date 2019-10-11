@@ -12,27 +12,29 @@ BEGIN
 	END
 
  	SET @studentsCount = (SELECT COUNT(s.Id)
-						    FROM Students AS s
+			        FROM Students AS s
 	                       WHERE s.Id = @studentId)
 
-    IF (@studentsCount = 0)
-	BEGIN
-		RETURN 'The student with provided id does not exist in the school!';
-	END
+        IF (@studentsCount = 0)
+        BEGIN
+        	RETURN 'The student with provided id does not exist in the school!';
+        END
 
-	SET @studentsCount = (SELECT COUNT(s.Id)
-						    FROM Students AS s
-	                        JOIN StudentsExams AS se
-						      ON se.StudentId = s.Id
-						   WHERE se.Grade BETWEEN @grade AND @grade + 50 AND s.Id = @studentId)
+        SET @studentsCount = (SELECT COUNT(s.Id)
+        			FROM Students AS s
+        			JOIN StudentsExams AS se
+        			  ON se.StudentId = s.Id
+        		       WHERE se.Grade BETWEEN @grade AND @grade + 50 
+        			 AND s.Id = @studentId)
 
-    SET @studentName = (SELECT TOP(1) s.FirstName
-					      FROM Students AS s
-	                      JOIN StudentsExams AS se
-					        ON se.StudentId = s.Id
-					     WHERE se.Grade BETWEEN @grade AND @grade + 50 AND s.Id = @studentId)
+        SET @studentName = (SELECT TOP(1) s.FirstName
+        		      FROM Students AS s
+			      JOIN StudentsExams AS se
+			        ON se.StudentId = s.Id
+			     WHERE se.Grade BETWEEN @grade 
+			       AND @grade + 50 AND s.Id = @studentId)
 
-    SET @result = 'You have to update ' + CAST(@studentsCount AS VARCHAR(MAX)) + ' grades for the student ' + @studentName;
+        SET @result = 'You have to update ' + CAST(@studentsCount AS VARCHAR(MAX)) + ' grades for the student ' + @studentName;
 
-	RETURN @result
+        RETURN @result
 END
