@@ -13,8 +13,8 @@ BEGIN
 	SET @newBalance = (SELECT i.NewSum FROM inserted AS i)
 	SET @body = 'On ' + CAST(GETDATE() AS VARCHAR(MAX)) 
 	            + ' your balance was changed from ' + CAST(@oldBalance AS VARCHAR(MAX))
-				+ ' to ' + CAST(@newBalance AS VARCHAR(MAX))
+		    + ' to ' + CAST(@newBalance AS VARCHAR(MAX))
 
 	INSERT INTO NotificationEmails(Recipient, [Subject], Body)
-	VALUES		(@recipient, @subject, @body)
+	VALUES	    (@recipient, @subject, @body)
 END
