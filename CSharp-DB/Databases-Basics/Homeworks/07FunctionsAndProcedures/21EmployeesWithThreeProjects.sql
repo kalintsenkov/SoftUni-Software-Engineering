@@ -4,8 +4,8 @@ BEGIN TRANSACTION
 	DECLARE @projectsCount INT;
 
 	SET @projectsCount = (SELECT COUNT(ep.EmployeeID)
-							FROM EmployeesProjects AS ep
-						   WHERE ep.EmployeeID = @emloyeeId)
+				FROM EmployeesProjects AS ep
+                               WHERE ep.EmployeeID = @emloyeeId)
 
 	IF (@projectsCount >= 3)
 	BEGIN
@@ -15,5 +15,5 @@ BEGIN TRANSACTION
 	END
 
 	INSERT INTO EmployeesProjects(EmployeeID, ProjectID)
-	VALUES		(@emloyeeId, @projectID)
+	VALUES	    (@emloyeeId, @projectID)
 COMMIT
