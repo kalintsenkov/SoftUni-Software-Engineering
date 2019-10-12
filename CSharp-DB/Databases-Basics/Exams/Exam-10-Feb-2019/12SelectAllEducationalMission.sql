@@ -1,5 +1,5 @@
   SELECT p.[Name] AS [PlanetName],
-  	     sp.[Name] AS [SpaceportName]
+         sp.[Name] AS [SpaceportName]
     FROM Spaceports AS sp
     JOIN Planets AS p
       ON p.Id = sp.PlanetId
