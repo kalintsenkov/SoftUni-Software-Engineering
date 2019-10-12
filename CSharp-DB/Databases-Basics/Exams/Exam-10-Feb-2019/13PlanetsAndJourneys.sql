@@ -1,5 +1,5 @@
   SELECT p.[Name] AS [PlanetName],
-		 COUNT(j.Id) AS [JourneysCount]
+	 COUNT(j.Id) AS [JourneysCount]
     FROM Journeys AS j
     JOIN Spaceports AS sp
       ON sp.Id = j.DestinationSpaceportId
