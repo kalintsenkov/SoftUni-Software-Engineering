@@ -14,8 +14,8 @@ BEGIN TRANSACTION
 	DECLARE @oldPurpose VARCHAR(11);
 
 	SET @oldPurpose = (SELECT j.Purpose
-					     FROM Journeys AS j
-						WHERE j.Id = @journeyId)
+			     FROM Journeys AS j
+			    WHERE j.Id = @journeyId)
 
 	IF (@oldPurpose = @newPurpose)
 	BEGIN
