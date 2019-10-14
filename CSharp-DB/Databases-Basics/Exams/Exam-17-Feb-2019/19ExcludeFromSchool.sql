@@ -2,8 +2,8 @@ CREATE OR ALTER PROC usp_ExcludeFromSchool(@studentId INT)
 AS
 BEGIN TRANSACTION
 	IF (NOT EXISTS(
-		SELECT * FROM Students AS s
-		 WHERE s.Id = @studentId))
+	    SELECT * FROM Students AS s
+	     WHERE s.Id = @studentId))
 	BEGIN
 		ROLLBACK
 		RAISERROR('This school has no student with the provided id!', 16, 1)
