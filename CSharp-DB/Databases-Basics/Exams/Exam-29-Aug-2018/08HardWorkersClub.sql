@@ -1,12 +1,12 @@
   SELECT a.FirstName,
          a.LastName,
-  	     a.[Work hours]
+  	 a.[Work hours]
     FROM (  SELECT d.Id,
-		           d.FirstName, 
+		   d.FirstName, 
                    d.LastName,
-          		   AVG(d.[Hours]) AS [Work hours]
+                   AVG(d.[Hours]) AS [Work hours]
               FROM (SELECT e.Id,
-						   e.FirstName,
+			   e.FirstName,
               	           e.LastName,
               	           DATEDIFF(HOUR, s.CheckIn, s.CheckOut) AS [Hours]
                       FROM Shifts AS s
