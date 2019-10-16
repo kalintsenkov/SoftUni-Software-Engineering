@@ -5,7 +5,7 @@ BEGIN TRANSACTION
 
 	IF (NOT EXISTS(
 	    SELECT * FROM Orders
-		 WHERE Id = @orderId))
+	     WHERE Id = @orderId))
 	BEGIN
 		ROLLBACK
 		RAISERROR('The order does not exist!', 16, 1)
@@ -14,7 +14,7 @@ BEGIN TRANSACTION
 
 	SET @issueDate = (SELECT o.[DateTime]
 	                    FROM Orders AS o
-					   WHERE o.Id = @orderId)
+			   WHERE o.Id = @orderId)
 
 	IF (DATEDIFF(DAY, @issueDate, @cancelDate) > 3)
 	BEGIN
