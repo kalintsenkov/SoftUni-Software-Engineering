@@ -1,7 +1,7 @@
    SELECT i.[Name] AS [Item],
-		  c.[Name] AS [Category],
-		  SUM(oi.Quantity) AS [Count],
-		  SUM(i.Price * oi.Quantity) AS [TotalPrice]
+	  c.[Name] AS [Category],
+	  SUM(oi.Quantity) AS [Count],
+	  SUM(i.Price * oi.Quantity) AS [TotalPrice]
      FROM OrderItems AS oi
 FULL JOIN Orders AS o
        ON o.Id = oi.OrderId
