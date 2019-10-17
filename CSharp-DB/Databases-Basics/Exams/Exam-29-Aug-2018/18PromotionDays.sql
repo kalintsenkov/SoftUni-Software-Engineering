@@ -1,7 +1,7 @@
 CREATE FUNCTION udf_GetPromotedProducts 
-				(@currentDate DATE, @startDate DATE, @endDate DATE, 
-				@discount DECIMAL(15, 2), @firstItemId INT, 
-				@secondItemId INT, @thirdItemId INT)
+		(@currentDate DATE, @startDate DATE, @endDate DATE, 
+		@discount DECIMAL(15, 2), @firstItemId INT, 
+		@secondItemId INT, @thirdItemId INT)
 RETURNS VARCHAR(MAX)
 AS
 BEGIN
@@ -28,24 +28,24 @@ BEGIN
 	END
 
 	DECLARE @firstName VARCHAR(50) = (SELECT [Name]
-									    FROM Items
-									   WHERE Id = @firstItemId)
+					    FROM Items
+					   WHERE Id = @firstItemId)
 	DECLARE @secondName VARCHAR(50) = (SELECT [Name]
-									     FROM Items
-									    WHERE Id = @secondItemId)
+					     FROM Items
+					    WHERE Id = @secondItemId)
 	DECLARE @thirdName VARCHAR(50) = (SELECT [Name]
-									    FROM Items
-									   WHERE Id = @thirdItemId)
+					    FROM Items
+					   WHERE Id = @thirdItemId)
 
 	DECLARE @firstDiscount DECIMAL(15, 2) = (SELECT Price
-											   FROM Items
-											  WHERE Id = @firstItemId)
+						   FROM Items
+						  WHERE Id = @firstItemId)
 	DECLARE @secondDiscount DECIMAL(15, 2) = (SELECT Price
-											   FROM Items
-											  WHERE Id = @secondItemId)
+						   FROM Items
+						  WHERE Id = @secondItemId)
 	DECLARE @thirdDiscount DECIMAL(15, 2) = (SELECT Price
-											   FROM Items
-											  WHERE Id = @thirdItemId)
+						   FROM Items
+						  WHERE Id = @thirdItemId)
 
 	SET @firstDiscount -= @firstDiscount * (@discount / 100)
 	SET @secondDiscount -= @secondDiscount * (@discount / 100)
@@ -56,5 +56,7 @@ BEGIN
 		RETURN 'The current date is not within the promotion dates!'
 	END
 
-	RETURN CONCAT(@firstName, ' ', 'price: ', @firstDiscount, ' ', '<-> ', @secondName, ' ', 'price: ', @secondDiscount, ' ', '<-> ', @thirdName, ' ', 'price: ', @thirdDiscount)
+	RETURN CONCAT(@firstName, ' ', 'price: ', @firstDiscount, ' ', '<-> ', 
+		      @secondName, ' ', 'price: ', @secondDiscount, ' ', '<-> ', 
+		      @thirdName, ' ', 'price: ', @thirdDiscount)
 END
