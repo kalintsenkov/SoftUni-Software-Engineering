@@ -6,23 +6,17 @@ RETURNS VARCHAR(MAX)
 AS
 BEGIN
 
-	IF (NOT EXISTS(
-		SELECT * FROM Items
-		WHERE Id = @firstItemId))
+	IF (NOT EXISTS(SELECT * FROM Items WHERE Id = @firstItemId))
 	BEGIN
 		RETURN 'One of the items does not exists!'
 	END
 
-	IF (NOT EXISTS(
-		SELECT * FROM Items
-		WHERE Id = @secondItemId))
+	IF (NOT EXISTS(SELECT * FROM Items WHERE Id = @secondItemId))
 	BEGIN
 		RETURN 'One of the items does not exists!'
 	END
 
-	IF (NOT EXISTS(
-		SELECT * FROM Items
-		WHERE Id = @thirdItemId))
+	IF (NOT EXISTS(SELECT * FROM Items WHERE Id = @thirdItemId))
 	BEGIN
 		RETURN 'One of the items does not exists!'
 	END
