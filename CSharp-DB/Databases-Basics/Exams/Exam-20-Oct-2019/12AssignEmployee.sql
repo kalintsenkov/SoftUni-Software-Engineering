@@ -2,14 +2,14 @@ CREATE PROC usp_AssignEmployeeToReport(@employeeId INT, @reportId INT)
 AS
 BEGIN
 	DECLARE @empDepartmentId INT = (SELECT e.DepartmentId
-									  FROM Employees AS e
-									 WHERE e.Id = @employeeId)
+					  FROM Employees AS e
+					 WHERE e.Id = @employeeId)
 
 	DECLARE @categDepartmentId INT = (SELECT c.DepartmentId
-									    FROM Reports AS r
-									    JOIN Categories AS c
-										  ON c.Id = r.CategoryId
-									   WHERE r.Id = @reportId)
+					    FROM Reports AS r
+					    JOIN Categories AS c
+			                      ON c.Id = r.CategoryId
+					   WHERE r.Id = @reportId)
 
 	IF (@empDepartmentId <> @categDepartmentId)
 	BEGIN
