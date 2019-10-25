@@ -90,6 +90,8 @@
 
             command.Parameters.AddWithValue("@villainId", villainId);
             command.Parameters.AddWithValue("@minionId", minionId);
+            
+            command.ExecuteNonQuery();
         }
 
         private static void InsertMinion(SqlConnection connection, string minionName, int minionAge, int? townId)
