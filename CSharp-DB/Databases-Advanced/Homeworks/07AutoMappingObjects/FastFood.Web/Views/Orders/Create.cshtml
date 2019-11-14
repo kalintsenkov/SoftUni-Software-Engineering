@@ -1,0 +1,44 @@
+﻿@model FastFood.Web.ViewModels.Orders.CreateOrderViewModel
+
+@{
+    ViewData["Title"] = "Create Order";
+}
+<h1 class="text-center">Create Order</h1>
+<hr class="bg-secondary half-width" />
+<form class="mx-auto half-width" asp-controller="Orders" asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="name">Customer</label>
+        <input type="text" class="form-control" id="customer" placeholder="Enter customer name..." name="customer">
+    </div>
+    <div class="form-group">
+        <label for="employee">Employee Name</label>
+        <select id="employee" class="form-control" name="EmployeeName">
+            @foreach (var employee in Model.Employees)
+            {
+                <option value="@employee">@employee</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="item">Item Name</label>
+        <select id="item" class="form-control" name="ItemName">
+            @foreach (var item in Model.Items)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="number" step="1" min="1" class="form-control" id="quantity" placeholder="Enter quantity..." name="quantity">
+    </div>
+    <div class="form-group">
+        <input type="checkbox" name="OrderType" value="ForHere"> For Here <br>
+        <input type="checkbox" name="OrderType" value="ToGo"> To Go <br>
+    </div>
+    <hr class="bg-secondary half-width" />
+    <div class="button-holder d-flex justify-content-center">
+        <button type="submit" class="btn ">Create</button>
+        <a class="btn btn-primary" asp-controller="Orders" asp-action="All">List All</a>
+    </div>
+</form>
