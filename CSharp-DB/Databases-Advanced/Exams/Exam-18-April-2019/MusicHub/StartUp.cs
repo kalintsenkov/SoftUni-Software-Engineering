@@ -13,12 +13,6 @@
         public static void Main(string[] args)
         {
             using var context = new MusicHubDbContext();
-
-            //ResetDatabase(context);
-
-            var result = Serializer.ExportSongsAboveDuration(context, 4);
-
-            Console.WriteLine(result);
         }
 
         private static void ResetDatabase(MusicHubDbContext context)
