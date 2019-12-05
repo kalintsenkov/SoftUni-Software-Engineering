@@ -1,8 +1,8 @@
 ﻿namespace VaporStore.DataProcessor
 {
-    using System.Linq;
-
-    using Data;
+    	using System.Linq;
+	
+    	using Data;
 
 	public static class Bonus
 	{
