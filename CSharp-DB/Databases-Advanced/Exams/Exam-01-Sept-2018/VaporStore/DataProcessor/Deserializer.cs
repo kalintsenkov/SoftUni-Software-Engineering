@@ -1,20 +1,20 @@
 ﻿namespace VaporStore.DataProcessor
 {
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.Globalization;
-    using System.IO;
-    using System.Linq;
-    using System.Text;
-    using System.Xml.Serialization;
-
-    using Newtonsoft.Json;
-
-    using Data;
-    using Data.Models;
-    using Data.Models.Enums;
-    using Dto.Import;
+    	using System;
+    	using System.Collections.Generic;
+    	using System.ComponentModel.DataAnnotations;
+    	using System.Globalization;
+    	using System.IO;
+    	using System.Linq;
+    	using System.Text;
+    	using System.Xml.Serialization;
+	
+    	using Newtonsoft.Json;
+	
+    	using Data;
+    	using Data.Models;
+    	using Data.Models.Enums;
+    	using Dto.Import;
 
     	public static class Deserializer
 	{
@@ -101,47 +101,47 @@
 
         	public static string ImportUsers(VaporStoreDbContext context, string jsonString)
 		{
-            var usersDtos = JsonConvert.DeserializeObject<ImportUserDto[]>(jsonString);
+            		var usersDtos = JsonConvert.DeserializeObject<ImportUserDto[]>(jsonString);
+		
+            		var users = new List<User>();
+            		var sb = new StringBuilder();
 
-            var users = new List<User>();
-            var sb = new StringBuilder();
-
-            foreach (var userDto in usersDtos)
-            {
-                if (!IsValid(userDto) || userDto.Cards.Any(c => !IsValid(c)) || !userDto.Cards.Any())
-                {
-                    sb.AppendLine(ErrorMessage);
-                    continue;
-                }
-
-                var user = new User
-                {
-                    FullName = userDto.FullName,
-                    Username = userDto.Username,
-                    Email = userDto.Email,
-                    Age = userDto.Age,
-                    Cards = userDto.Cards
-                        .Select(c => new Card
-                        {
-                            Number = c.Number,
-                            Cvc = c.Cvc,
-                            Type = (CardType)Enum.Parse(typeof(CardType), c.Type)
-                        })
-                        .ToArray()
-                };
-
-                users.Add(user);
-
-                sb.AppendLine(string.Format(
-                    SuccessfullyImportedUserMessage,
-                    user.Username,
-                    user.Cards.Count));
-            }
-
-            context.Users.AddRange(users);
-            context.SaveChanges();
-
-            return sb.ToString().TrimEnd();
+            		foreach (var userDto in usersDtos)
+            		{
+            		    if (!IsValid(userDto) || userDto.Cards.Any(c => !IsValid(c)) || !userDto.Cards.Any())
+            		    {
+            		        sb.AppendLine(ErrorMessage);
+            		        continue;
+            		    }
+		
+            		    var user = new User
+            		    {
+            		        FullName = userDto.FullName,
+            		        Username = userDto.Username,
+            		        Email = userDto.Email,
+            		        Age = userDto.Age,
+            		        Cards = userDto.Cards
+            		            .Select(c => new Card
+            		            {
+            		                Number = c.Number,
+            		                Cvc = c.Cvc,
+            		                Type = (CardType)Enum.Parse(typeof(CardType), c.Type)
+            		            })
+            		            .ToArray()
+            		    };
+		
+            		    users.Add(user);
+		
+            		    sb.AppendLine(string.Format(
+            		        SuccessfullyImportedUserMessage,
+            		        user.Username,
+            		        user.Cards.Count));
+            		}
+		
+            		context.Users.AddRange(users);
+            		context.SaveChanges();
+		
+            		return sb.ToString().TrimEnd();
 		}
 
 		public static string ImportPurchases(VaporStoreDbContext context, string xmlString)
