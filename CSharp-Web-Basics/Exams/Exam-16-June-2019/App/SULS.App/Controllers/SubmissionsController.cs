@@ -26,7 +26,6 @@
             }
 
             var problem = this.problemsService.GetById(id);
-
             if (problem == null)
             {
                 return this.Error("We can't find this problem");

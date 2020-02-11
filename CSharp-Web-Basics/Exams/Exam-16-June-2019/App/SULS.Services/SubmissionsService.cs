@@ -46,5 +46,9 @@
             this.db.Submissions.Remove(submission);
             this.db.SaveChanges();
         }
+
+        public IQueryable<Submission> GetAllByProblemId(string problemId)
+            => this.db.Submissions
+                .Where(s => s.ProblemId == problemId);
     }
 }

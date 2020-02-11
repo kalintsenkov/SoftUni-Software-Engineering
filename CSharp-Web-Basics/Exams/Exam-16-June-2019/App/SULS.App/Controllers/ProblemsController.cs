@@ -10,10 +10,14 @@
     public class ProblemsController : Controller
     {
         private readonly IProblemsService problemsService;
+        private readonly ISubmissionsService submissionsService;
 
-        public ProblemsController(IProblemsService problemsService)
+        public ProblemsController(
+            IProblemsService problemsService, 
+            ISubmissionsService submissionsService)
         {
             this.problemsService = problemsService;
+            this.submissionsService = submissionsService;
         }
 
         public HttpResponse Create()
@@ -57,7 +61,6 @@
             }
 
             var problem = this.problemsService.GetById(id);
-
             if (problem == null)
             {
                 return this.Error("We can't find this problem");
@@ -66,10 +69,8 @@
             var problemDetailsViewModel = new ProblemDetailsViewModel
             {
                 Name = problem.Name,
-                Submissions = this.problemsService
-                    .GetAll()
-                    .SelectMany(p => p.Submissions)
-                    .Where(s => s.ProblemId == id)
+                Submissions = this.submissionsService
+                    .GetAllByProblemId(id)
                     .Select(s => new SubmissionDetailsViewModel
                     {
                         Id = s.Id,
@@ -78,6 +79,7 @@
                         MaxPoints = problem.Points,
                         CreatedOn = s.CreatedOn.ToShortDateString()
                     })
+                    .ToList()
             };
 
             return this.View(problemDetailsViewModel);
