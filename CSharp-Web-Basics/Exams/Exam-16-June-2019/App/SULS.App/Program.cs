@@ -5,7 +5,7 @@
 
     public class Program
     {
-        public async static Task Main()
+        public static async Task Main()
         {
             await WebHost.StartAsync(new StartUp());
         }
