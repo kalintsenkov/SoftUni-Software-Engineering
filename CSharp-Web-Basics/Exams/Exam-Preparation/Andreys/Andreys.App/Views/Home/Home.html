@@ -1,0 +1,13 @@
+﻿<h1 class="text-center"><span class="badge badge-pill badge-dark">Products</span></h1>
+<div class="bg-blur container">
+    <div class="row">
+        @foreach (var product in Model.Products)
+        {
+            <div class="col-3 text-center">
+                <a href="/Products/Details?id=@product.Id"><img src="@product.ImageUrl" class="img-fluid" width="200" height="200"/></a>
+                <h5 class="text-center">@product.Name</h5>
+                <h2 class="text-center">@product.Price</h2>
+            </div>
+        }
+    </div>
+</div>
