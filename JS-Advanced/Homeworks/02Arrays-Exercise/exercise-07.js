@@ -4,6 +4,12 @@ function solve(matrix) {
     const rowsEqual = areRowsEqual();
     const colsEqual = areColsEqual();
 
+    if (!rowsEqual || !colsEqual) {
+        return false;
+    } else if (rowsEqual && colsEqual) {
+        return true;
+    }
+
     function areRowsEqual() {
         let firstRowSum = 0;
         for (let row = 0; row < matrix.length; row++) {
@@ -17,8 +23,7 @@ function solve(matrix) {
                 }
 
                 rowSum += cell;
-                if (rowSum !== firstRowSum && 
-                    row === matrix.length - 1 && 
+                if (rowSum !== firstRowSum &&
                     col === matrix[row].length - 1) {
                     return false;
                 }
@@ -34,14 +39,14 @@ function solve(matrix) {
             let colSum = 0;
             for (let row = 0; row < matrix.length; row++) {
                 const cell = matrix[row][col];
+                
                 if (col === 0) {
                     firstColSum += cell;
                     continue;
                 }
 
                 colSum += cell;
-                if (colSum !== firstColSum && 
-                    col === matrix[0].length - 1 && 
+                if (colSum !== firstColSum &&
                     row === matrix.length - 1) {
                     return false;
                 }
@@ -50,15 +55,4 @@ function solve(matrix) {
 
         return true;
     }
-
-    if (!rowsEqual || !colsEqual) {
-        return false;
-    } else if (rowsEqual && colsEqual) {
-        return true;
-    }
 }
-
-console.log(solve([[1, 0, 0],
-    [0, 0, 1],
-    [0, 1, 0]]
-   ));
