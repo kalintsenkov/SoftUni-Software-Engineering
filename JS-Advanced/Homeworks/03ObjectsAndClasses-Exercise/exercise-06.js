@@ -1,7 +1,7 @@
 'use strict'
 
 function solve(arr) {
-    const systems = [];
+    const systems = {};
 
     for (const row of arr) {
         const [name, component, subcomponent] = row.split(' | ');
@@ -15,37 +15,21 @@ function solve(arr) {
                 systems[name][component].push(subcomponent);
             }
         } else {
-            systems[name] = [];
+            systems[name] = {};
             systems[name][component] = [];
             systems[name][component].push(subcomponent);
         }
     }
 
-    for (const system in systems) {
-        console.log(system);
-
-        for (const component in systems[system].sort((a, b) => systems[a].length < systems[b].length)) {
-            console.log(`|||${component}`);
-
-            for (const subcomponent of systems[system][component]) {
-                console.log(`||||||${subcomponent}`);
-            }
-        }
-    }
+    const sortedSystems = Object.entries(systems)
+        .sort((a, b) => Object.keys(b[1]).length - Object.keys(a[1]).length || a[0].localeCompare(b[0]))
+        .forEach(([system, component]) => {
+            console.log(system);
+            Object.entries(component)
+                .sort((a, b) => b[1].length - a[1].length)
+                .forEach(([name, sub]) => {
+                    console.log(`|||${name}`);
+                    sub.forEach(s => console.log(`||||||${s}`));
+                });
+        });
 }
-
-solve([
-    'SULS | Main Site | Home Page',
-    'SULS | Main Site | Login Page',
-    'SULS | Main Site | Register Page',
-    'SULS | Judge Site | Login Page',
-    'SULS | Judge Site | Submittion Page',
-    'Lambda | CoreA | A23',
-    'SULS | Digital Site | Login Page',
-    'Lambda | CoreB | B24',
-    'Lambda | CoreA | A24',
-    'Lambda | CoreA | A25',
-    'Lambda | CoreC | C4',
-    'Indice | Session | Default Storage',
-    'Indice | Session | Default Security'
-]);
