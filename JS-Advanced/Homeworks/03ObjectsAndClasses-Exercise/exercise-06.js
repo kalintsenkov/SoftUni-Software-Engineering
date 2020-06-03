@@ -21,7 +21,7 @@ function solve(arr) {
         }
     }
 
-    const sortedSystems = Object.entries(systems)
+    Object.entries(systems)
         .sort((a, b) => Object.keys(b[1]).length - Object.keys(a[1]).length || a[0].localeCompare(b[0]))
         .forEach(([system, component]) => {
             console.log(system);
