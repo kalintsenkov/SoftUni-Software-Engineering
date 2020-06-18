@@ -3,7 +3,7 @@
 function solve() {
     function mage(name) {
         const state = {
-            name, 
+            name,
             health: 100,
             mana: 100,
             cast: (spell) => {
@@ -17,7 +17,7 @@ function solve() {
 
     function fighter(name) {
         const state = {
-            name, 
+            name,
             health: 100,
             stamina: 100,
             fight: () => {
