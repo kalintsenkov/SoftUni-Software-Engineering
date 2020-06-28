@@ -10,6 +10,13 @@
 
 <h2> Certificates </h2>
 
+<table>
+<tr>
+  <th> C# </th>
+  <th> JavaScript </th>
+</tr>
+<tr><td>
+
 |**Course**|**Link**| 
 |---|---|
 |<a href="https://softuni.bg/trainings/2179/programming-basics-with-csharp-november-2018" > Programming Basics with C# </a>   | <a href="https://softuni.bg/certificates/details/61829/9a9e18ec"> Link</a> |
@@ -20,3 +27,13 @@
 |<a href="https://softuni.bg/trainings/2457/entity-framework-core-october-2019"> Entity Framework Core </a> | <a href="https://softuni.bg/certificates/details/74271/85329329"> Link</a> |
 |<a href="https://softuni.bg/trainings/2613/csharp-web-basics-january-2020"> C# Web Basics </a> | <a href="https://softuni.bg/certificates/details/77291/cc6000e8"> Link</a> |
 |<a href="https://softuni.bg/trainings/2796/asp-net-core-february-2020"> ASP.NET Core </a> | <a href="https://softuni.bg/certificates/details/81068/7c9ced91"> Link</a> |
+
+</td>
+<td>
+
+|**Course**|**Link**| 
+|---|---|
+|<a href="https://softuni.bg/trainings/2838/js-advanced-may-2020" > JS Advanced </a>   | <a href="#"> Link </a> |
+
+</td></tr>
+</table>
