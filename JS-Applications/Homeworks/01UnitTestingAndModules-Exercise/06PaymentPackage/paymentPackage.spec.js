@@ -3,7 +3,15 @@ const PaymentPackage = require('./paymentPackage').PaymentPackage;
 
 describe('PaymentPackage', () => {
     describe('constructor', () => {
+        it('should throw Error if name is invalid', () => {
+            expect(() => new PaymentPackage([], 800)).to.throw(Error, 'Name must be a non-empty string');
+            expect(() => new PaymentPackage('', 800)).to.throw(Error, 'Name must be a non-empty string');
+        })
 
+        it('should throw Error if value is invalid', () => {
+            expect(() => new PaymentPackage('Consultation', {})).to.throw(Error, 'Value must be a non-negative number');
+            expect(() => new PaymentPackage('Consultation', -100)).to.throw(Error, 'Value must be a non-negative number');
+        })
     });
 
     describe('name', () => {
