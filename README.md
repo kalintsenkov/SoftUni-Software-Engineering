@@ -11,6 +11,7 @@
 <h2> Certificates </h2>
 
 <table>
+
 <tr>
   <th> C# </th>
   <th> JavaScript </th>
