@@ -36,4 +36,5 @@
 |<a href="https://softuni.bg/trainings/2838/js-advanced-may-2020" > JS Advanced </a> | <a href="#"> Link </a> |
 
 </td></tr>
+
 </table>
