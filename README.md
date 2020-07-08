@@ -1,6 +1,6 @@
 # <p align="center"> Courses from the main program in SoftUni <p>
 
-<a href="https://softuni.bg/trainings/courses" rel="Courses">  ![SoftUni logo][logo] <a/>
+<a href="https://softuni.bg/trainings/courses" rel="Courses">  ![SoftUni logo][logo] </a>
 
 [logo]: http://innovationstarterbox.bg/wp-content/uploads/2016/05/Softuni_logo_trasparent.png "Logo Title Text 2"
 
@@ -35,6 +35,7 @@
 |**Course**|**Link**| 
 |---|---|
 |<a href="https://softuni.bg/trainings/2838/js-advanced-may-2020" > JS Advanced </a> | <a href="https://softuni.bg/certificates/details/83864/677cd2c4"> Link </a> |
+|<a href="https://softuni.bg/trainings/2840/js-applications-june-2020" > JS Applications </a> | <a href="#"> Link </a> |
 
 </td></tr>
 
