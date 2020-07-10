@@ -1,0 +1,16 @@
+{
+    "phonebook": {
+        "0b3219ab-f696-4259-bc7b-6277af9cb27a": {
+            "person": "Gosho",
+            "phone": "+359 0967653"
+        },
+        "519f517e-d3d3-4d20-a775-710abf5ee6cc": {
+            "person": "Stamat",
+            "phone": "+359 09123467653"
+        },
+        "739eaa1b-669d-4adb-97a7-6bcb5b442ea2": {
+            "person": "Peter",
+            "phone": "+001 113546"
+        }
+    }
+}
