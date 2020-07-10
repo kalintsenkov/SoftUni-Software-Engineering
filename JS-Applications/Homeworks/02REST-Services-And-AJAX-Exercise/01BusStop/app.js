@@ -7,7 +7,7 @@ function getInfo() {
     busesUl.innerHTML = '';
 
     const stopId = stopIdElement.value;
-    const url = `http://localhost:3000/businfo/${stopId}`
+    const url = `http://localhost:3000/businfo/${stopId}`;
 
     fetch(url)
         .then(response => response.json())
