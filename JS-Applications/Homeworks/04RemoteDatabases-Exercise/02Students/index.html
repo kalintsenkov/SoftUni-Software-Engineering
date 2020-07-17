@@ -8,6 +8,8 @@
 </head>
 
 <body>
+    <button id="loadBtn">LOAD ALL STUDENTS</button>
+
     <table id="results">
         <thead>
             <tr>
@@ -20,6 +22,20 @@
         </thead>
         <tbody></tbody>
     </table>
+
+    <form>
+        <h3>Add student</h3>
+        <label for="firstName">First name</label>
+        <input type="text" id="firstName" placeholder="First name...">
+        <label for="lastName">Last name</label>
+        <input type="text" id="lastName" placeholder="Last name...">
+        <label for="facultyNumber">Faculty Number</label>
+        <input type="text" id="facultyNumber" placeholder="Faculty Number...">
+        <label for="grade">Grade</label>
+        <input type="number" step="0.01" id="grade" placeholder="Grade...">
+        <button id="submitBtn">Submit</button>
+    </form>
+
     <script src="./app.js"></script>
 </body>
 
