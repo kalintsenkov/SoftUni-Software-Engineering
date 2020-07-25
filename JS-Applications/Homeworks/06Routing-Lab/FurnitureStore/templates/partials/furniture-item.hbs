@@ -1,0 +1,19 @@
+<div class="col-md-4">
+    <div class="card text-white bg-primary">
+        <div class="card-body">
+            <blockquote class="card-blockquote">
+                <img src="{{image}}" />
+                <p>{{description}}</p>
+                <footer>Someone famous in
+                    <cite title="Source Title">Source Title</cite>
+                </footer>
+                <div class="pull-right">
+                    <a href="#/details/{{objectId}}" class="btn btn-info">Details</a>
+                    {{#if inProfile}}
+                    <a href="#/details/{{objectId}}" class="btn btn-danger">Delete</a>
+                    {{/if}}
+                </div>
+            </blockquote>
+        </div>
+    </div>
+</div>

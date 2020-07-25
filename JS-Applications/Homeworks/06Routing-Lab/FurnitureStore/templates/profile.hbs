@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row space-top">
+        <div class="col-md-12">
+            <h1>Profile Page</h1>
+            <p>Listing your furniture.</p>
+        </div>
+    </div>
+    <div class="row space-top">
+        {{#each furniture}}
+        {{>furnitureItem}}
+        {{/each}}
+    </div>
+</div>
