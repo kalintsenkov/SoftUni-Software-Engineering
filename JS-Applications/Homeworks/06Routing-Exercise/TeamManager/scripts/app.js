@@ -1,1 +1,3 @@
- // TODO
+window.addEventListener('load', async function () {
+
+});
