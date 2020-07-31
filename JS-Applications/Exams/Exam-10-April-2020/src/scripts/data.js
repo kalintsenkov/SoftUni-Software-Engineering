@@ -40,7 +40,11 @@ export async function login(email, password) {
 }
 
 export async function logout() {
-    _throwIfUserIsNotLoggedIn();
+    const token = localStorage.getItem('userToken');
+
+    if (!token) {
+        throw new Error('User is not logged in!');
+    }
 
     return await fetch(host(endpoints.logout), {
         method: 'GET',
