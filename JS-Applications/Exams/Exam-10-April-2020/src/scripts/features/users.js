@@ -19,7 +19,7 @@ export async function registerPost() {
         if (result.hasOwnProperty('errorData')) {
             const error = new Error();
             Object.assign(error, result);
-            return error;
+            throw error;
         }
 
         this.redirect('#/login');
@@ -44,7 +44,7 @@ export async function loginPost() {
         if (result.hasOwnProperty('errorData')) {
             const error = new Error();
             Object.assign(error, result);
-            return error;
+            throw error;
         }
 
         this.app.userData.loggedIn = true;
@@ -73,5 +73,5 @@ export async function logoutGet() {
     localStorage.removeItem('email');
     localStorage.removeItem('userId');
 
-    this.redirect('#/');
+    this.redirect('#/home');
 }

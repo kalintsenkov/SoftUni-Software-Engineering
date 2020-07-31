@@ -1,5 +1,6 @@
 import home from './features/home.js';
 import { registerGet, registerPost, loginGet, loginPost, logoutGet } from './features/users.js';
+import { create, details } from './features/posts.js';
 
 window.addEventListener('load', async function () {
 
@@ -21,6 +22,10 @@ window.addEventListener('load', async function () {
         this.post('#/login', (context) => { loginPost.call(context) });
 
         this.get('#/logout', logoutGet);
+
+        this.get('#/details/:id', details)
+
+        this.post('/create-post', (context) => { create.call(context) });
     });
 
     app.run('#/home');
