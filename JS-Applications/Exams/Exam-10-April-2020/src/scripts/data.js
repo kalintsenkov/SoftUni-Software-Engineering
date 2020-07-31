@@ -81,6 +81,58 @@ export async function createPost(post) {
     return result;
 }
 
+export async function editPost(id, post) {
+    const token = localStorage.getItem('userToken');
+
+    if (!token) {
+        throw new Error('User is not logged in!');
+    }
+
+    const response = await fetch(host(endpoints.posts + '/' + id), {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+            'user-token': token
+        },
+        body: JSON.stringify(post)
+    });
+
+    const result = await response.json();
+
+    if (result.hasOwnProperty('errorData')) {
+        const error = new Error();
+        Object.assign(error, result);
+        throw error;
+    }
+
+    return result;
+}
+
+export async function deletePost(id) {
+    const token = localStorage.getItem('userToken');
+
+    if (!token) {
+        throw new Error('User is not logged in!');
+    }
+
+    const response = await fetch(host(endpoints.posts + '/' + id), {
+        method: 'DELETE',
+        headers: {
+            'user-token': token
+        }
+    });
+
+    const result = await response.json();
+
+    if (result.hasOwnProperty('errorData')) {
+        const error = new Error();
+        Object.assign(error, result);
+        throw error;
+    }
+
+    return result;
+}
+
 export async function getPosts() {
     const response = await fetch(host(endpoints.posts));
 
