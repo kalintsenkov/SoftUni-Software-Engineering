@@ -1,0 +1,35 @@
+.details {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../images/desktop.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.detail {
+  box-shadow: -3px 3px 10px gray;
+  padding: 30px 50px;
+  width: 50%;
+  background: #fff;
+}
+
+.detail h1 {
+  margin: 20px 0;
+}
+
+.detail a {
+  background: #212121;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.detail h3 {
+  margin-top: 20px;
+  word-wrap: break-word;
+}

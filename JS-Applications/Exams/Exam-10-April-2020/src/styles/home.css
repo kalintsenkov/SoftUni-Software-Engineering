@@ -1,0 +1,249 @@
+#home {
+  background: url('../images/home.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.background-container {
+  flex: 1;
+  background: hsla(0, 0%, 13%, 0.384);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background-container>h1 {
+  color: #fff;
+  font-size: 50px;
+}
+
+.background-container a {
+  display: inline-block;
+  color: #212121;
+  text-decoration: none;
+  background: #fff;
+  padding: 10px 25px;
+  font-size: 20px;
+  margin: 50px 20px;
+  transition: transform 0.3s;
+}
+
+.background-container a:hover {
+  transform: scale(1.1);
+}
+
+/* Logged In */
+.first-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../images/home.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.first-section form,
+.edit-posts form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  width: 450px;
+  padding: 30px;
+  margin-top: 60px;
+  border-radius: 5px;
+}
+
+.edit-posts form {
+  margin: 0;
+  position: relative;
+  height: 80vh;
+}
+
+.first-section form h1,
+.edit-posts form h1 {
+  align-self: center;
+  font-size: 26px;
+  margin: 10px 0 15px;
+}
+
+.first-section form input,
+.first-section form textarea,
+.edit-posts form input,
+.edit-posts form textarea {
+  border: none;
+  background: rgb(240, 240, 240);
+  font-size: 16px;
+  padding: 10px;
+  resize: none;
+}
+
+.first-section form label,
+.edit-posts form label {
+  margin: 10px 0;
+}
+
+.first-section form button,
+.edit-posts form button {
+  margin-top: 22px;
+  padding: 12px;
+  border: none;
+  background: #212121;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.first-section form button:hover,
+.edit-posts form button:hover {
+  cursor: pointer;
+}
+
+.second-section {
+  height: 70vh;
+  width: 100%;
+  padding: 2% 5%;
+}
+
+.second-section h3 {
+  font-size: 34px;
+  text-align: center;
+}
+
+.second-section hr {
+  border: 2px solid rgb(255, 102, 0);
+  border-radius: 100px;
+  width: 10%;
+  margin: 1% auto 3% auto;
+}
+
+.second-section .post {
+  position: relative;
+  word-wrap: break-word;
+  box-shadow: 1px 1px 5px gray;
+  padding: 20px;
+  border-radius: 5px;
+  min-width: 35%;
+  height: 70%;
+  margin: 30px 20px;
+}
+
+.post h1 {
+  font-size: 24px;
+  text-align: center;
+  color: rgb(255, 102, 0);
+  margin-bottom: 20px;
+}
+
+.post h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.post p {
+  margin: 1% 0;
+}
+
+.post span {
+  color: rgb(255, 102, 0);
+}
+
+.posts-row {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+#delete-button,
+#edit-button {
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+  font-size: 18px;
+  border: none;
+  background: rgb(255, 102, 0);
+  color: #fff;
+  padding: 10px;
+  width: 100px;
+  text-decoration: none;
+}
+
+#delete-button {
+  right: 20px;
+}
+
+#edit-button {
+  left: 20px;
+}
+
+#edit-button:hover,
+#delete-button:hover,
+#details-button {
+  cursor: pointer;
+}
+
+.edit-posts {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../images/home.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.edit-form {
+  position: fixed;
+  z-index: 100;
+  box-shadow: 1px 1px 5px gray;
+  top: 8%;
+  animation: appear 1 0.5s;
+}
+
+.edit-form a {
+  color: black;
+  position: absolute;
+  top: -36px;
+  right: -10px;
+}
+
+.edit-form a:hover {
+  transform: none;
+}
+
+.edit-posts a:hover {
+  transform: none;
+}
+
+#close-btn {
+  background: none;
+  padding: 0;
+}
+
+img {
+  width: 25px;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+}
+
+#details-button {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 6px;
+  color: blue;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+}
