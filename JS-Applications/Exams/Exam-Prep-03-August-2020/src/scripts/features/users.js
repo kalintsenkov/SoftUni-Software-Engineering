@@ -65,11 +65,8 @@ export async function loginPost() {
         this.app.userData.username = result.username;
         this.app.userData.userId = result.objectId;
 
-        localStorage.setItem('userToken', result['user-token']);
-        localStorage.setItem('username', result.username);
-        localStorage.setItem('userId', result.objectId);
-
         showSuccess('Login successful.');
+        
         this.redirect('#/home');
     } catch (error) {
         console.error(error);
@@ -83,10 +80,6 @@ export async function logoutGet() {
     this.app.userData.loggedIn = false;
     this.app.userData.username = undefined;
     this.app.userData.userId = undefined;
-
-    localStorage.removeItem('userToken');
-    localStorage.removeItem('username');
-    localStorage.removeItem('userId');
 
     showSuccess('Logout successful.');
     this.redirect('#/home');
