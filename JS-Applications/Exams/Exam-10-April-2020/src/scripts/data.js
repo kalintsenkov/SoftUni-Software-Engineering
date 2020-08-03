@@ -55,7 +55,11 @@ export async function logout() {
 }
 
 export async function createPost(post) {
-    _throwIfUserIsNotLoggedIn();
+    const token = localStorage.getItem('userToken');
+
+    if (!token) {
+        throw new Error('User is not logged in!');
+    }
 
     const response = await fetch(host(endpoints.posts), {
         method: 'POST',
@@ -78,7 +82,11 @@ export async function createPost(post) {
 }
 
 export async function editPost(id, post) {
-    _throwIfUserIsNotLoggedIn();
+    const token = localStorage.getItem('userToken');
+
+    if (!token) {
+        throw new Error('User is not logged in!');
+    }
 
     const response = await fetch(host(endpoints.posts + '/' + id), {
         method: 'PUT',
@@ -101,7 +109,11 @@ export async function editPost(id, post) {
 }
 
 export async function deletePost(id) {
-    _throwIfUserIsNotLoggedIn();
+    const token = localStorage.getItem('userToken');
+
+    if (!token) {
+        throw new Error('User is not logged in!');
+    }
 
     const response = await fetch(host(endpoints.posts + '/' + id), {
         method: 'DELETE',
@@ -131,12 +143,4 @@ export async function getPostById(id) {
     const response = await fetch(host(endpoints.posts + '/' + id));
 
     return await response.json();
-}
-
-function _throwIfUserIsNotLoggedIn() {
-    const token = localStorage.getItem('userToken');
-
-    if (!token) {
-        throw new Error('User is not logged in!');
-    }
 }
