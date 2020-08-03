@@ -1,0 +1,36 @@
+{{>header}}
+<form action="#/organize" method="post">
+    <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">Organize Event</h1>
+        <p>Fill up the following information!</p>
+    </div>
+
+    <div class="form-label-group">
+        <input type="text" id="inputEventName" name="name" class="form-control" placeholder="Event" required=""
+            autofocus="">
+        <label for="inputEventName">Event</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="text" id="inpuEventDate" name="dateTime" class="form-control" placeholder="Date" required="">
+        <label for="inpuEventDate">Date</label>
+    </div>
+
+    <div class="form-label-group">
+        <textarea type="text" id="inputEventDescription" name="description" class="form-control"
+            placeholder="Description" required=""></textarea>
+        <label for="inputEventDescription">Description</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="text" id="inputEventImage" name="imageURL" class="form-control" placeholder="Image" required=""
+            autofocus="">
+        <label for="inputEventImage">Image</label>
+    </div>
+
+    <button class="btn btn-lg btn-dark btn-block" type="submit">Organize it</button>
+
+    <p class="mt-5 mb-3 text-muted text-center">© UniEnt - 2019.</p>
+
+</form>
+{{>footer}}
