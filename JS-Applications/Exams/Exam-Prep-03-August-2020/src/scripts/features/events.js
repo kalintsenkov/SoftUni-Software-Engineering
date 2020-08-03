@@ -150,6 +150,11 @@ export async function join() {
     try {
         const event = await getEventById(eventId);
 
+        if (event.ownerId === this.app.userData.userId) {
+            showError('You cannot join an event, organized by yourself.');
+            return;
+        }
+
         const interested = Number(event.interested);
 
         const result = await joinEvent(eventId, interested + 1);
