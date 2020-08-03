@@ -3,11 +3,11 @@ import { registerGet, registerPost, loginGet, loginPost, logoutGet, profile } fr
 import { createGet, createPost, details, editGet, editPost, deleteGet, join } from './features/events.js';
 
 window.addEventListener('load', async function () {
-
+    
     const app = Sammy('#main', async function () {
-
+        
         this.use('Handlebars', 'hbs');
-
+        
         this.userData = {
             loggedIn: false
         };
