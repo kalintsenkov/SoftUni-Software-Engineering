@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>CookUni</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+    <div id="notifications">
+        <div id="successBox" class="alert alert-success" role="alert">{Success Message...}</div>
+        <div id="loadingBox" class="alert alert-info" role="alert">Loading...</div>
+        <div id="errorBox" class="alert alert-danger" role="alert">{Error Message...}</div>
+    </div>
+
+    <div id="rooter" class="cover-container w-100 d-flex h-100 p-3 mx-auto flex-column">
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="./node_modules/sammy/lib/sammy.js"></script>
+    <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+    <script type="module" src="./scripts/app.js"></script>
+</body>
+
+</html>
