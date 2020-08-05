@@ -2,52 +2,53 @@
 
 {{#if loggedIn}}
 
-    <h1 class="text-center">Our Recipes</h1>
+<h1 class="text-center">Our Recipes</h1>
 
-    <div id="sharedRecipes"> 
-    {{#each receipts}}
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="our-team-main">
+    <div id="sharedRecipes">
 
-                            <div class="team-front">
-                                <img src="https://cdn.pixabay.com/photo/2017/10/09/19/29/eat-2834549__340.jpg" />
-                                <h3>Meal Name</h3>
-                                <p>Vegetables and legumes/beans CATEGORY</p>
-                            </div>
-
-                            <div class="team-back">
-                                <div class="back-side-info">
-                                    <h4>Ingredients</h4>
-                                    <ul>
-                                        <li>First ingredients</li>
-                                        <li>Second ingredients</li>
-                                        <li>Third ingredients</li>
-                                        <li>...</li>
-                                    </ul>
-                                    <a href="#">View the receipt</a>
-                                </div>
-
-                                <img class="foodImage"
-                                    src="https://t3.ftcdn.net/jpg/00/25/90/48/240_F_25904887_fhZJ692ukng3vQxzHldvuN981OiYVlJ1.jpg" />
-                            </div>
-
+    {{#each recipes}}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="our-team-main">
+                    
+                        <div class="team-front">
+                            <img src="{{categoryImageURL}}" />
+                            <h3>{{meal}}</h3>
+                            <p>{{category}}</p>
                         </div>
+
+                        <div class="team-back">
+                            <div class="back-side-info">
+                                <h4>Ingredients</h4>
+                                <ul>
+                                    {{#each ingredients}}
+                                    <li>{{this}}</li>
+                                    {{/each}}
+                                </ul>
+                                <a href="#/details/{{objectId}}">View the receipt</a>
+                            </div>
+
+                            <img class="foodImage" src="{{foodImageURL}}" />
+                        </div>
+
                     </div>
                 </div>
             </div>
+        </div>
     {{else}}
         {{>notFound}}
     {{/each}}
+
     </div>
 
+
 {{else}}
-    <main role="main" class="inner cover mt-5">
-        <h1 class="cover-heading">Coooooking University</h1>
-        <p class="lead">They say that food passes through the stomach, we say that food passes through CookUni...
-        </p>
-    </main>
+<main role="main" class="inner cover mt-5">
+    <h1 class="cover-heading">Coooooking University</h1>
+    <p class="lead">They say that food passes through the stomach, we say that food passes through CookUni...
+    </p>
+</main>
 {{/if}}
 
 {{>footer}}

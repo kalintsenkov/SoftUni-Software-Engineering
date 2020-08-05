@@ -26,7 +26,7 @@ export default class API {
     }
 
     getOptions(headers) {
-        const token = localStorage.getItem('userToken');
+        const token = sessionStorage.getItem('userToken');
 
         const options = { headers: headers || {} };
 
@@ -85,12 +85,18 @@ export default class API {
     }
 
     async register(firstName, lastName, username, password) {
-        return await this.post(this.endpoints.register, {
+        const result = await this.post(this.endpoints.register, {
             firstName,
             lastName,
             username,
             password
         });
+
+        sessionStorage.setItem('fullName', result.firstName + ' ' + result.lastName);
+        sessionStorage.setItem('userToken', result['user-token']);
+        sessionStorage.setItem('userId', result.objectId);
+
+        return result;
     }
 
     async login(username, password) {
@@ -99,8 +105,8 @@ export default class API {
             password
         });
 
+        sessionStorage.setItem('fullName', result.firstName + ' ' + result.lastName);
         sessionStorage.setItem('userToken', result['user-token']);
-        sessionStorage.setItem('username', result.username);
         sessionStorage.setItem('userId', result.objectId);
 
         return result;
@@ -109,8 +115,6 @@ export default class API {
     async logout() {
         await this.get(this.endpoints.logout);
 
-        sessionStorage.removeItem('userToken');
-        sessionStorage.removeItem('username');
-        sessionStorage.removeItem('userId');
+        sessionStorage.clear();
     }
 }

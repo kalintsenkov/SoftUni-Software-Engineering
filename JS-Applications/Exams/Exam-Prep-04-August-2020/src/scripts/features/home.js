@@ -1,3 +1,5 @@
+import { getAll } from "../data.js";
+
 export default async function () {
     this.partials = {
         header: await this.load('./views/common/header.hbs'),
@@ -5,5 +7,15 @@ export default async function () {
         notFound: await this.load('./views/common/notFound.hbs')
     };
 
-    this.partial('./views/home.hbs', this.app.userData);
+    let recipes = await getAll();
+
+    recipes = recipes.reduce((acc, curr, i) => {
+        curr.ingredients = curr.ingredients.split(', ');
+        acc.push(curr);
+        return acc;
+    }, []);
+
+    const data = Object.assign({ recipes }, this.app.userData);
+
+    this.partial('./views/home.hbs', data);
 }

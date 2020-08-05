@@ -1,7 +1,7 @@
 import { showSuccess, showError } from '../notifications.js';
 import { register, login, logout } from '../data.js';
 
-export async function registerGet() {
+export async function getRegister() {
     this.partials = {
         header: await this.load('./views/common/header.hbs'),
         footer: await this.load('./views/common/footer.hbs')
@@ -10,7 +10,7 @@ export async function registerGet() {
     this.partial('./views/users/register.hbs', this.app.userData);
 }
 
-export async function registerPost() {
+export async function postRegister() {
     if (this.params.firstName.length < 2 || this.params.lastName.length < 2) {
         showError('First and last name should be at least 2 characters long');
         return;
@@ -45,16 +45,20 @@ export async function registerPost() {
             throw error;
         }
 
+        this.app.userData.loggedIn = true;
+        this.app.userData.userId = result.objectId;
+        this.app.userData.fullName = result.firstName + ' ' + result.lastName;
+
         showSuccess('User registration successful.');
 
-        this.redirect('#/login');
+        this.redirect('#/home');
     } catch (error) {
         console.error(error);
         showError(error.message);
     }
 }
 
-export async function loginGet() {
+export async function getLogin() {
     this.partials = {
         header: await this.load('./views/common/header.hbs'),
         footer: await this.load('./views/common/footer.hbs')
@@ -63,7 +67,7 @@ export async function loginGet() {
     this.partial('./views/users/login.hbs', this.app.userData);
 }
 
-export async function loginPost() {
+export async function postLogin() {
     try {
         const result = await login(this.params.username, this.params.password);
 
@@ -74,8 +78,8 @@ export async function loginPost() {
         }
 
         this.app.userData.loggedIn = true;
-        this.app.userData.username = result.username;
         this.app.userData.userId = result.objectId;
+        this.app.userData.fullName = result.firstName + ' ' + result.lastName;
 
         showSuccess('Login successful.');
 
@@ -86,13 +90,14 @@ export async function loginPost() {
     }
 }
 
-export async function logoutGet() {
+export async function getLogout() {
     await logout();
 
     this.app.userData.loggedIn = false;
-    this.app.userData.username = undefined;
     this.app.userData.userId = undefined;
+    this.app.userData.fullName = undefined;
 
     showSuccess('Logout successful.');
+
     this.redirect('#/home');
 }

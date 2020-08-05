@@ -27,8 +27,8 @@ export async function archive(id) {
     return await api.delete(endpoints.recipes + '/' + id);
 }
 
-export async function like(id, likes) {
-    return await api.put(endpoints.recipes + '/' + id, { likes });
+export async function like(id, likesCounter) {
+    return await api.put(endpoints.recipes + '/' + id, { likesCounter });
 }
 
 export async function getById(id) {
@@ -37,10 +37,4 @@ export async function getById(id) {
 
 export async function getAll() {
     return await api.get(endpoints.recipes);
-}
-
-export async function getAllByOwner() {
-    const ownerId = localStorage.getItem('userId');
-
-    return await api.get(endpoints.recipes + `?where=ownerId%3D%27${ownerId}%27`);
 }

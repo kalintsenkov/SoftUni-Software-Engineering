@@ -1,0 +1,34 @@
+{{>header}}
+<div class="row form-layout p-5">
+    <div class="col-md-12">
+        <div class="recepieInfo">
+            <div class="detailsFoodImage">
+                <img src="{{foodImageURL}}" alt="">
+            </div>
+
+            <div class="infoPack">
+                <h3 class="my-3">{{meal}}</h3>
+                <p class="prep-method">{{prepMethod}}</p>
+                <p class="description">{{description}}</p>
+            </div>
+            <div class="actions">
+                {{#if isMine}}
+                    <a class="btn btn-danger" href="#/archive/{{objectId}}">Archive</a>
+                    <a class="btn btn-info" href="#/edit/{{objectId}}">Edit</a>
+                {{else}}
+                    <a class="btn btn-success" href="#/like/{{objectId}}"> {{likesCounter}} likes</a>
+                {{/if}}
+            </div>
+        </div>
+
+        <div class="detailsIngredients">
+            <h3 class="my-3 ingredient">Ingredients</h3>
+            <ul>
+                {{#each ingredients}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
+{{>footer}}
