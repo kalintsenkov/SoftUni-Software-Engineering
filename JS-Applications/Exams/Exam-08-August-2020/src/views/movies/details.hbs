@@ -1,0 +1,24 @@
+{{>header}}
+<div class="container">
+    <div class="row bg-light text-dark">
+        <h1>Movie title: {{title}}</h1>
+
+        <div class="col-md-8">
+            <img class="img-thumbnail" src="{{imageUrl}}" alt="Movie">
+        </div>
+        <div class="col-md-4 text-center">
+            <h3 class="my-3 ">Movie Description</h3>
+            <p>{{description}}</p>
+
+            {{#if isMine}}
+                <a class="btn btn-danger" href="#/delete/{{objectId}}">Delete</a>
+                <a class="btn btn-warning" href="#/edit/{{objectId}}">Edit</a>
+            {{else}}
+                <a class="btn btn-primary" href="#/like/{{objectId}}">Like</a>
+                <span id="liked" class="enrolled-span">Liked {{likesCount}}</span>
+            {{/if}}
+            
+        </div>
+    </div>
+</div>
+{{>footer}}
