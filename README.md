@@ -15,8 +15,11 @@
 <tr>
   <th> C# </th>
   <th> JavaScript </th>
+  <th> Front-End </th>
 </tr>
-<tr><td>
+
+<tr>
+<td>
 
 |**Course**|**Link**| 
 |---|---|
@@ -37,6 +40,15 @@
 |<a href="https://softuni.bg/trainings/2838/js-advanced-may-2020" > JS Advanced </a> | <a href="https://softuni.bg/certificates/details/83864/677cd2c4"> Link </a> |
 |<a href="https://softuni.bg/trainings/2840/js-applications-june-2020" > JS Applications </a> | <a href="https://softuni.bg/certificates/details/86804/39c858a7"> Link </a> |
 
-</td></tr>
+</td>
+
+<td>
+
+|**Course**|**Link**| 
+|---|---|
+|<a href="https://softuni.bg/trainings/3122/html-and-css-september-2020" > HTML & CSS </a> | <a href="#"> Link </a> |
+
+</td>
+</tr>
 
 </table>
