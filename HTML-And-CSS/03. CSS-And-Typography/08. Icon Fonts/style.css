@@ -1,0 +1,25 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css';
+
+body .button {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: transparent;
+    text-decoration: none;
+}
+
+body .button.click-button {
+    padding: 2px;
+    color: white;
+    background-color: #008000;
+}
+
+body .button.email-button {
+    padding: 2px;
+    color: white;
+    background-color: #FF8C00;
+}
+
+a i {
+    margin-left: 3px;
+    margin-right: 3px;
+}
