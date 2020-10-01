@@ -1,0 +1,10 @@
+body {
+  background: rgb(238, 238, 238);
+  color: rgb(51, 51, 51);
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+body img {
+  max-width: 600px;
+}

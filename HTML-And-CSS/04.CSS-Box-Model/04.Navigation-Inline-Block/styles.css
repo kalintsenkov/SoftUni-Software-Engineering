@@ -1,0 +1,34 @@
+html {
+  margin: 40px 60px;
+  font-family: Helvetica, sans-serif;
+}
+
+hr {
+  color: black;
+  border: 1px solid black;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav h1 {
+  display: inline-block;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  padding-left: 50px;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: rgb(71, 167, 82);
+  text-decoration-line: none;
+  margin: 15px;
+}
