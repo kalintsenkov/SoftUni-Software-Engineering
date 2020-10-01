@@ -1,0 +1,18 @@
+body {
+  background: rgb(238, 238, 238);
+  color: rgb(51, 51, 51);
+  padding: 20px;
+}
+
+body article {
+  display: inline-block;
+  width: 60%;
+}
+
+body article img {
+  max-width: 600px;
+}
+
+body aside {
+  float: right;
+}
