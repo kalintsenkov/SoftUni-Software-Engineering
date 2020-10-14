@@ -1,0 +1,51 @@
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #ededed;
+  max-width: 1200px;
+  min-width: 800px;
+  margin: 30px auto;
+}
+
+header h1 {
+  border-bottom: 3px black solid;
+}
+
+article img {
+  border: 5px black solid;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-shadow: -4px 10px 42px 5px rgba(0, 0, 0, 0.43);
+}
+
+article img.right {
+  float: right;
+  margin-left: 15px;
+}
+
+article img.left {
+  float: left;
+  margin-right: 15px;
+}
+
+p.site-title {
+  display: inline-block;
+  font: bold;
+  text-transform: uppercase;
+}
+
+blockquote {
+  border-left: 3px #dddddd solid;
+  padding-left: 30px;
+  float: right;
+  max-width: 40%;
+  font-style: italic;
+  color: #5f5956;
+}
+
+blockquote cite {
+  display: block;
+  padding-top: 50px;
+  float: right;
+}
