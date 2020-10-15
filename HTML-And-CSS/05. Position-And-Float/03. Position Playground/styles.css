@@ -1,0 +1,49 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div.viewport {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+div.viewport:nth-child(1) {
+  background: rgb(25, 91, 158);
+  background: linear-gradient(
+    90deg,
+    rgba(25, 91, 158, 1) 0%,
+    rgba(66, 205, 161, 1) 75%
+  );
+}
+
+div.viewport:nth-child(2) {
+  background: rgb(168, 50, 119);
+  background: linear-gradient(
+    90deg,
+    rgba(168, 50, 119, 1) 30%,
+    rgba(210, 130, 19, 1) 73%
+  );
+}
+
+div.viewport:nth-child(1) section.card,
+div.viewport:nth-child(2) section.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+i {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: rgb(255, 255, 255);
+}
