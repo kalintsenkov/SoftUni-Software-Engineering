@@ -1,0 +1,20 @@
+body {
+    background: #EEEEEE;
+}
+
+section.gallery, ul, li {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+section.gallery ul li {
+    margin: 30px 125px;
+    padding: 30px 20px;
+    border: 10px solid black;
+    box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.63);
+}
+
+section.gallery ul li img {
+    align-self: center;
+}
