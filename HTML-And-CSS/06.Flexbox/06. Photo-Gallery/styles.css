@@ -2,7 +2,7 @@ body {
     background: #EEEEEE;
 }
 
-section.gallery, ul, li {
+body, section.gallery, ul, li {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
