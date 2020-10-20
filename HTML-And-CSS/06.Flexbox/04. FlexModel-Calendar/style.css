@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+div.container,
+div.container section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+div.container {
+    max-width: 65vw;
+    height: 89vh;
+    margin: 50px auto;
+}
+
+div.container section.week {
+    flex-flow: row wrap;
+    flex-basis: 70%;
+}
+
+div.container section.notes {
+    flex-direction: column;
+    height: 49.6vh;
+}
+
+div.container section.notes span {
+    width: 100%;
+}
+
+div.container section span {
+    border: 1px black solid;
+    flex-grow: 1;
+    padding: 50px;
+}
+
+div.container section span.info {
+    flex-basis: 100%;
+}
+

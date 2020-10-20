@@ -1,0 +1,103 @@
+body {
+    background: rgb(238, 238, 238);
+    font-family: Helvetica, sans-serif;
+    margin: 50px 200px;
+}
+
+div.page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.page h1,
+div.page h2,
+div.page h3,
+div.page h4,
+div.page h5,
+div.page h6 {
+    font-family: Georgia, serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px rgb(0, 0, 0) solid;
+    flex-basis: 100%;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+header nav {
+    align-self: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a {
+    margin: 8px;
+}
+
+a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+section main {
+    flex-basis: 60%;
+}
+
+section main article img {
+    border: 5px black solid;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25);
+    background: rgb(255, 255, 255);
+}
+
+section main article img.right {
+    float: right;
+    margin-left: 15px;
+}
+
+section main article img.left {
+    float: left;
+    margin-right: 15px;
+}
+
+section main blockquote {
+    border-left: 3px #dddddd solid;
+    padding-left: 30px;
+    float: right;
+    max-width: 40%;
+    font-style: italic;
+    color: #5f5956;
+    font-family: Georgia, serif;
+}
+
+section main blockquote cite {
+    display: block;
+    padding-top: 50px;
+    float: right;
+}
+
+section aside {
+    flex-basis: 20%;
+    margin-right: -50px;
+}
+
+section aside nav ul li {
+    list-style-type: square;
+} 

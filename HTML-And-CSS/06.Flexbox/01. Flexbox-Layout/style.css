@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 30px auto;
+    height: 90vh;
+    width: 90vw;
+    background: #EEEEEE;
+}
+
+header, 
+main, 
+aside,
+footer {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 40px;
+    margin: 20px 5px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+}
+
+header {
+    flex-basis: 95%;
+}
+
+main {
+    flex-basis: 49%;
+    margin-right: 15px;
+    flex-grow: 2;
+}
+
+aside {
+    flex-basis: 40%;
+}
+
+footer {
+    flex-basis: 95%;
+}
