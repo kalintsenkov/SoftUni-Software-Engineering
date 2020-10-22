@@ -1,0 +1,64 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    background: rgb(238, 238, 238);
+}
+
+h2 {
+    font-family: Georgia, serif;
+    margin: 20px 145px;
+}
+
+div.cards-layout article {
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+div.cards-layout article img {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+div.cards-layout article > p {
+    padding: 0 12px;
+}
+
+div.cards-layout article p:nth-child(3) {
+    flex-grow: 1;
+}
+
+div.cards-layout article footer {
+    padding: 12px;
+    border-top: 2px solid lightgrey;
+}
+
+div.cards-layout.masonry {
+    margin: 50px auto;
+    width: 80%;
+    display: flex;
+}
+
+div.cards-layout.masonry div.col {
+    margin: 10px;
+    flex-basis: 30%;
+}
+
+div.cards-layout.masonry div.col article {
+    margin: 20px 0;
+}
+
+div.cards-layout.flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 50px auto;
+}
+
+div.cards-layout.flex article {
+    margin: 10px;
+    flex-basis: 30%;
+}
