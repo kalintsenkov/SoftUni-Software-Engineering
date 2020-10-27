@@ -1,0 +1,96 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+html {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  color: #596877;
+  line-height: 2;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+section article {
+  flex-basis: 50%;
+  max-width: 550px;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+section article:nth-child(1) {
+  padding: 18px;
+  background: #e3f3fd;
+}
+
+section article:nth-child(2) {
+  padding: 58px;
+  border: 5px solid #44a9f8;
+  text-align: center;
+  font-size: 18px;
+}
+
+section article:nth-child(2) h2,
+section article:nth-child(2) h3 {
+  display: inline-block;
+}
+
+section article:nth-child(2) h2 {
+  color: #44a9f8;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+section article:nth-child(2) h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+section article button {
+  text-transform: uppercase;
+  padding: 8px 30px;
+  color: white;
+  background: #44a9f8;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+section article h2,
+section article ul {
+  padding-left: 8px;
+}
+
+section article ul li {
+  list-style: none;
+}
+
+section article ul li i {
+  color: #63b7f9;
+  padding-right: 8px;
+}
