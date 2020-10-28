@@ -1,0 +1,238 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+html {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  color: #596877;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+header {
+  background: white;
+  width: 70%;
+  margin: 0 auto;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: rgba(41, 57, 75, 0.25) 0px 6px 10px 0px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav img {
+  max-width: 150px;
+  margin-left: 30px;
+}
+
+header nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-right: 30px;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 0 12px;
+  padding: 28px 7px;
+  border-top: 5px solid transparent;
+  text-align: center;
+}
+
+header nav ul li a {
+  color: #596877;
+  text-decoration: none;
+}
+
+header nav ul li.active {
+  border-top: 5px solid #42abf8;
+}
+
+header nav ul li.profile {
+  align-self: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #42abf8;
+  box-shadow: 0px 0px 8px 0px #42abf8;
+}
+
+header nav ul li.profile a {
+  color: white;
+  position: relative;
+  top: -10px;
+}
+
+main section.certificates {
+  margin-bottom: 80px;
+}
+
+main section.certificates div.certificates-wrapper {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+main section.certificates p.certificates-info-paragraph {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  margin-left: 350px;
+  font-style: italic;
+}
+
+main section.certificates div.certificates-wrapper::before {
+  content: "";
+  background-image: url("./images/hero-certificates.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 350px;
+  left: 0px;
+  opacity: 20%;
+}
+
+main section.certificates div.certificates-wrapper article.certificates-info {
+  color: white;
+  background: #29384c;
+  flex-basis: 38%;
+  border-radius: 8px;
+  padding: 30px;
+  margin-left: 330px;
+}
+
+main section.certificates div.certificates-wrapper article.certificates-images {
+  flex-basis: 40%;
+  display: flex;
+  align-items: flex-end;
+}
+
+main section.diploma-wrapper {
+  display: block;
+}
+
+main section.diploma-wrapper h2 {
+  margin-top: 130px;
+  text-align: center;
+}
+
+main section.diploma-wrapper p.diploma-info-paragraph {
+  width: 70%;
+  margin: 30px auto;
+}
+
+main section.diploma-wrapper article.diploma-info {
+  background: #f3f5f7;
+  width: 70%;
+  padding: 30px;
+  margin: 50px auto;
+}
+
+main section article.apply-wrapper {
+  background: url("images/sign-up-prompt-background.jpg");
+  width: 70%;
+  margin: 40px auto;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  padding: 70px;
+}
+
+main section article.apply-wrapper button {
+  font-family: inherit;
+  padding: 10px 35px;
+  background: transparent;
+  color: white;
+  border: 1px white solid;
+  border-radius: 8px;
+}
+
+main section article.apply-wrapper button.apply {
+  font-family: inherit;
+  padding: 10px 35px;
+  background: white;
+  color: #42abf8;
+  border: 1px #42abf8 solid;
+  border-radius: 8px;
+}
+
+main section article.apply-wrapper .line {
+  border-right: 1px white solid;
+  margin-left: 5px;
+  margin-right: 8px;
+  height: 30px;
+  width: 2px;
+}
+
+footer {
+  border-top: 2px solid #596877;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer nav img {
+  width: 150px;
+}
+
+footer nav div {
+  display: flex;
+}
+
+footer nav div p {
+  margin-left: 12px;
+  color: #dfdfdf;
+}
+
+footer nav ul {
+  display: flex;
+}
+
+footer nav li {
+  list-style: none;
+  margin: 6px;
+}
+
+footer nav li a {
+  color: #64707d;
+  text-decoration: none;
+}
