@@ -1,0 +1,30 @@
+@media all and (max-width: 600px) {
+  ul.icons li {
+    font-size: 14px;
+  }
+
+  main {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  main section.thumbnails {
+    flex-wrap: wrap;
+  }
+
+  main section.thumbnails > div {
+    width: 100%;
+    margin: 5px;
+  }
+
+  main section.thumbnails > div a {
+    width: 100%;
+    margin: 10px 10px;
+  }
+
+  main section.thumbnails > div a img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
