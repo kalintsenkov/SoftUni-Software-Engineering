@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+html {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  color: #596877;
+  line-height: 2;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background: #306085;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.certificates-wrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto 40px auto 40px;
+}
+
+.certificates-wrapper .certificates-info {
+  color: white;
+  flex-basis: 50%;
+  padding: 50px;
+}
+
+.certificates-wrapper .certificates-info::before {
+  content: url(images/dots.svg);
+  position: absolute;
+  z-index: -1;
+  left: 163px;
+  right: 0;
+  bottom: 0;
+  top: 385px;
+}
+
+.certificates-wrapper .certificates-info p.special {
+  color: #8aa5ba;
+  font-style: italic;
+}
+
+.certificates-wrapper .certificates-images {
+  display: flex;
+  flex-flow: row;
+  flex-basis: 30%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.certificates-wrapper .certificates-images::before {
+  content: url(images/dots.svg);
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  transform: rotate(90deg);
+  right: 525px;
+}
+
+.certificates-wrapper .certificates-images::after {
+  content: url(images/arrow.svg);
+  position: absolute;
+  z-index: -1;
+  right: 189px;
+}

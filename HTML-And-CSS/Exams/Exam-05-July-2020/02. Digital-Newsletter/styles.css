@@ -1,0 +1,134 @@
+body {
+  margin: 0 auto;
+  font-family: "Lato", "Helvetica", sans-serif;
+}
+
+main {
+  background: rgb(52, 64, 75);
+  background: linear-gradient(
+    180deg,
+    rgba(52, 64, 75, 1) 0%,
+    rgba(93, 62, 71, 1) 51%,
+    rgba(252, 73, 77, 1) 100%
+  );
+  color: #fff;
+  padding: 3em;
+}
+
+main header {
+  font-family: "Montserrat", "Lato", "Helvetica", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 1em;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.newsletter-intro {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.newsletter-intro hr {
+  color: #fc4c50;
+  background: #fc4c50;
+  border: none;
+  width: 100%;
+  height: 3px;
+  margin: 2em 1em;
+}
+
+.newsletter-intro h4 {
+  font-family: "Montserrat", "Lato", "Helvetica", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.newsletter-boxes {
+  display: flex;
+}
+
+.newsletter-box {
+  margin: 1em;
+  background: #fff;
+  box-shadow: 0px 6px 10px rgba(41, 57, 75, 0.25);
+  color: #000;
+}
+
+.newsletter-box p {
+  font-family: "Lato", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3f4d5a;
+}
+
+.newsletter-box h4 {
+  font-family: "Montserrat", "Lato", "Helvetica", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3f4d5a;
+}
+
+.newsletter-box img {
+  width: 100%;
+}
+
+.newsletter-box-content {
+  padding: 10px 20px;
+}
+
+.newsletter-bottom hr {
+  color: #fff;
+  background: #fff;
+  border: none;
+  width: 90%;
+  height: 3px;
+  margin: 2em 3em;
+}
+
+.newsletter-bottom h4 {
+  font-family: "Montserrat", "Lato", "Helvetica", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.newsletter-bottom-content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter-bottom-content-links,
+.newsletter-bottom-content p {
+  padding-bottom: 3.5em;
+}
+
+.newsletter-bottom-content-links a {
+  display: block;
+  color: #fff;
+  margin: 1em 0;
+}
+
+footer {
+  text-align: center;
+}
+
+.bottom-logo {
+  width: 6%;
+  margin: 20px auto 0 auto;
+}
+
+.social-icons-wrapper {
+  margin: 2em 0;
+}
+
+.social-icons-wrapper a {
+  margin: 0.5em;
+}
