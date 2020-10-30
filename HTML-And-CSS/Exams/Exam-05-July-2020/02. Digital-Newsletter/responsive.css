@@ -1,1 +1,27 @@
-/* TODO: Add media queries */
+@media all and (max-width: 884px) {
+  .newsletter-boxes {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .newsletter-bottom {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .newsletter-bottom hr {
+    width: 30%;
+  }
+
+  .newsletter-bottom article {
+    width: 50%;
+  }
+
+  .newsletter-bottom-content {
+    text-align: left;
+  }
+
+  .bottom-logo {
+    width: 100px;
+  }
+}
