@@ -32,8 +32,8 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: rgba(41, 57, 75, 0.25) 0px 6px 10px 0px;
   padding: 18px 80px;
+  box-shadow: rgba(41, 57, 75, 0.25) 0px 6px 10px 0px;
 }
 
 header nav ul {
@@ -47,15 +47,15 @@ header nav ul li {
 }
 
 header nav ul li a {
-  text-decoration: none;
   color: #6b5474;
+  text-decoration: none;
 }
 
 header nav ul li a.login {
   text-decoration: none;
+  padding: 10px 16px;
   color: white;
   background: #9b5dc6;
-  padding: 10px 16px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -65,8 +65,8 @@ header nav ul li a.login {
 
 .certificates-wrapper {
   display: flex;
-  justify-content: space-between;
   margin: 80px;
+  justify-content: space-between;
 }
 
 .certificates-wrapper .certificates-info {
@@ -82,28 +82,28 @@ header nav ul li a.login {
 }
 
 .certificates-wrapper .certificates-info p.info {
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
 }
 
 .certificates-wrapper .certificates-info p.italic {
-  font-style: italic;
   color: #737c81;
   font-size: 14px;
+  font-style: italic;
 }
 
 .certificates-wrapper .certificates-image {
   display: flex;
   flex-flow: column;
   flex-basis: 30%;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .cpe-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 80px;
   padding-bottom: 0;
   background: #14162b;
@@ -129,22 +129,22 @@ header nav ul li a.login {
   display: flex;
   flex-flow: column;
   flex-basis: 30%;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .cpe-wrapper .cpe-image img {
   position: relative;
+  top: 26px;
   bottom: 0;
   left: 0;
   right: 0;
-  top: 26px;
 }
 
 .career-center-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin: 80px 0;
 }
 
@@ -152,47 +152,47 @@ header nav ul li a.login {
   display: flex;
   flex-flow: column wrap;
   flex-basis: 60%;
-  color: #343434;
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   margin-right: 140px;
+  color: #343434;
 }
 
 .career-center-wrapper .career-center-info h2 {
-  color: #54546d;
   font-size: 26px;
   margin-bottom: 20px;
+  color: #54546d;
 }
 
 .career-center-wrapper .career-center-info button {
   font-family: inherit;
-  background: transparent;
   width: 25%;
-  border: 1px solid #9b5dc6;
+  font-size: 14px;
+  font-weight: bold;
+  word-wrap: break-word;
   padding: 10px 16px;
+  margin-top: 30px;
+  color: #9b5dc6;
+  background: transparent;
+  border: 1px solid #9b5dc6;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  color: #9b5dc6;
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: 30px;
-  word-wrap: break-word;
 }
 
 .career-center-wrapper .career-center-image {
   display: flex;
   flex-flow: column;
   flex-basis: 30%;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 footer {
-  background: #2c2c3a;
   display: flex;
   padding: 80px;
+  background: #2c2c3a;
 }
 
 footer h3 {
@@ -201,8 +201,8 @@ footer h3 {
 
 footer nav {
   display: flex;
-  flex-direction: column;
   flex-basis: 60%;
+  flex-direction: column;
 }
 
 footer nav ul {
@@ -231,8 +231,8 @@ footer article.copyright ul {
 
 footer article.copyright ul li {
   list-style: none;
-  color: white;
   margin: 10px;
+  color: white;
 }
 
 footer article.copyright ul i {
