@@ -1,0 +1,244 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+html {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  color: #596877;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(41, 57, 75, 0.25) 0px 6px 10px 0px;
+  padding: 18px 80px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #6b5474;
+}
+
+header nav ul li a.login {
+  text-decoration: none;
+  color: white;
+  background: #9b5dc6;
+  padding: 10px 16px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: rgba(41, 57, 75, 0.25) 0px 6px 10px 0px;
+}
+
+.certificates-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px;
+}
+
+.certificates-wrapper .certificates-info {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 60%;
+  color: #343434;
+}
+
+.certificates-wrapper .certificates-info h2 {
+  color: #54546d;
+  font-size: 26px;
+}
+
+.certificates-wrapper .certificates-info p.info {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.certificates-wrapper .certificates-info p.italic {
+  font-style: italic;
+  color: #737c81;
+  font-size: 14px;
+}
+
+.certificates-wrapper .certificates-image {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cpe-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  padding-bottom: 0;
+  background: #14162b;
+  color: white;
+}
+
+.cpe-wrapper .cpe-info {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 60%;
+}
+
+.cpe-wrapper .cpe-info h2 {
+  font-size: 26px;
+}
+
+.cpe-wrapper .cpe-info p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.cpe-wrapper .cpe-image {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cpe-wrapper .cpe-image img {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 26px;
+}
+
+.career-center-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 0;
+}
+
+.career-center-wrapper .career-center-info {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 60%;
+  color: #343434;
+  font-weight: 400;
+  font-size: 18px;
+  margin-right: 140px;
+}
+
+.career-center-wrapper .career-center-info h2 {
+  color: #54546d;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.career-center-wrapper .career-center-info button {
+  font-family: inherit;
+  background: transparent;
+  width: 25%;
+  border: 1px solid #9b5dc6;
+  padding: 10px 16px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #9b5dc6;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 30px;
+  word-wrap: break-word;
+}
+
+.career-center-wrapper .career-center-image {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: #2c2c3a;
+  display: flex;
+  padding: 80px;
+}
+
+footer h3 {
+  color: #9b5dc6;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+}
+
+footer nav ul {
+  padding: 0;
+}
+
+footer nav ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer article.copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+footer article.copyright ul {
+  display: flex;
+  padding: 0;
+}
+
+footer article.copyright ul li {
+  list-style: none;
+  color: white;
+  margin: 10px;
+}
+
+footer article.copyright ul i {
+  font-size: 32px;
+}
+
+footer article.copyright p {
+  color: white;
+}
