@@ -1,0 +1,90 @@
+@media all and (max-width: 600px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+  }
+
+  .banner h2 {
+    width: 90%;
+    word-wrap: break-word;
+    font-size: 32px;
+  }
+
+  .banner p {
+    font-size: 22px;
+  }
+
+  .banner ul,
+  .banner li {
+    width: 89%;
+    margin: 0;
+  }
+
+  .banner a {
+    display: inline-block;
+    width: 115%;
+  }
+
+  .wrapper.special {
+    display: flex;
+  }
+
+  .wrapper.special div.features {
+    flex-direction: column;
+  }
+
+  .wrapper.special div.features article {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: none;
+  }
+
+  .wrapper.special div.features article:nth-child(5) {
+    border-bottom: 1px solid #e3e3e3;
+  }
+
+  .wrapper.style2.special {
+    display: flex;
+    padding-bottom: 0;
+  }
+
+  .wrapper.style2.special form.grid-form {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .wrapper.style2.special form.grid-form article {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .wrapper.style2.special form.grid-form ul,
+  .wrapper.style2.special form.grid-form li {
+    width: 89%;
+  }
+
+  .wrapper.style2.special form.grid-form input[type="submit"] {
+    margin: 20px 0 30px 0;
+    display: inline;
+    width: 114%;
+  }
+
+  .footer {
+    padding: 30px 0 30px 0;
+  }
+
+  .footer .copyright {
+    margin: 0;
+  }
+
+  .footer::before {
+    background-color: #ddd;
+    content: "";
+    height: 1px;
+    left: 9%;
+    position: absolute;
+    top: 0;
+    width: 80%;
+  }
+}

@@ -1,0 +1,255 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  color: #54546d;
+  font-size: 18px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 180px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #6b5474;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav img {
+  width: 140px;
+}
+
+.fees {
+  background: #54546d;
+}
+
+.fees::after {
+  content: url(images/calculator-icon.svg);
+  position: absolute;
+  top: 230px;
+  right: 0;
+  left: -58px;
+  bottom: 0;
+}
+
+.fees h1 {
+  color: white;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 500;
+  position: relative;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 90px 0 90px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 126px;
+}
+
+.cards-wrapper .fee-card {
+  text-align: center;
+  width: 460px;
+}
+
+.cards-wrapper .fee-card .content {
+  background: white;
+  border: 1px solid gray;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: none;
+  padding: 32px 24px;
+}
+
+.cards-wrapper .fee-card .content h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.cards-wrapper .fee-card .content button {
+  background: #9a5dc6;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px 32px;
+  font-family: inherit;
+  border-radius: 100px;
+  border: none;
+  color: white;
+  margin: 24px 18px 33px 18px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 4px 5px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
+}
+
+.cards-wrapper .fee-card .footer {
+  color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: none;
+  padding: 20px 24px;
+}
+
+.cards-wrapper .fee-card .footer h2 {
+  font-weight: 400;
+}
+
+.cards-wrapper .fee-card .footer.free {
+  background: linear-gradient(to left, #4cd781, #029a3c);
+}
+
+.cards-wrapper .fee-card .footer.fundamentals {
+  background: linear-gradient(to left, #629bd0, #4c6b87);
+}
+
+.cards-wrapper .fee-card .footer.professional {
+  background: linear-gradient(to left, #8d7ee2, #4a37a5);
+}
+
+.cards-wrapper .fee-card .footer.prices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-wrapper .fee-card .footer.prices .separator {
+  height: 80px;
+  border: 1px solid white;
+}
+
+.online-wrapper {
+  width: 70%;
+  margin: 30px auto;
+  margin-top: 220px;
+}
+
+.online-wrapper h2 {
+  font-weight: 500;
+}
+
+.online-wrapper p {
+  margin: 40px 0 40px 0;
+}
+
+.online-wrapper table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.online-wrapper td,
+.online-wrapper th {
+  text-align: left;
+  padding: 16px;
+  font-size: 18px;
+}
+
+.online-wrapper tr:nth-child(odd) {
+  background: #e6e6e6;
+}
+
+.online-wrapper tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.online-wrapper td:first-child {
+  width: 80%;
+}
+
+.online-wrapper tr:first-child td:first-child {
+  border-top-left-radius: 8px;
+}
+
+.online-wrapper tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+.online-wrapper tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}
+
+.online-wrapper i.fa-check {
+  color: #12a945;
+  font-size: 20px;
+}
+
+.online-wrapper i.fa-times {
+  color: #fc4c50;
+  font-size: 20px;
+}
+
+.bank-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 180px;
+}
+
+.bank-wrapper .bank-info {
+  flex-basis: 60%;
+}
+
+.bank-wrapper .bank-info h2 {
+  font-weight: 500;
+  margin: 0 0 40px 0;
+}
+
+.bank-wrapper .bank-image {
+  flex-basis: 20%;
+}
+
+footer {
+  text-align: center;
+  background: #54546d;
+  margin: 0;
+}
+
+footer p {
+  color: #8f8daa;
+  margin: 0;
+  padding: 20px 0;
+}
