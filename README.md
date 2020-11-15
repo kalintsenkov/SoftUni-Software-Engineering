@@ -46,7 +46,7 @@
 
 | **Course**                                                                               | **Link**                  |
 | ---------------------------------------------------------------------------------------- | ------------------------- |
-| <a href="https://softuni.bg/trainings/3122/html-and-css-september-2020"> HTML & CSS </a> | <a href="#"> Soon.. </a>  |
+| <a href="https://softuni.bg/trainings/3122/html-and-css-september-2020"> HTML & CSS </a> | <a href="https://softuni.bg/certificates/details/91333/14034f66"> Link </a>  |
 | <a href="https://softuni.bg/trainings/3047/angular-november-2020"> Angular </a>          | <a href="#"> Soon... </a> |
 
 </td>
