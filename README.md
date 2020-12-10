@@ -53,3 +53,13 @@
 </tr>
 
 </table>
+
+<h2> Diplomas </h2>
+
+<td>
+
+| **Diploma**      | **Link** |
+| ---------------- | -------- |
+| C# Web Developer | <a href="https://softuni.bg/certificates/details/92725/c215dbb8"> Link </a> |
+
+</td>
