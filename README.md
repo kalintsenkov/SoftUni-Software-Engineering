@@ -21,8 +21,8 @@
 <tr>
 <td>
 
-| **Course**                                                                                                                         | **Link**                                                                   |
-| ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| **Course**                                                            | **Link**                                                   |
+| --------------------------------------------------------------------- | ---------------------------------------------------------- |
 | <a href="https://softuni.bg/trainings/2179/programming-basics-with-csharp-november-2018" > Programming Basics with C# </a>         | <a href="https://softuni.bg/certificates/details/61829/9a9e18ec"> Link</a> |
 | <a href="https://softuni.bg/trainings/2237/technology-fundamentals-with-csharp-january-2019"> Technology Fundamentals with C# </a> | <a href="https://softuni.bg/certificates/details/65330/35ca2e73"> Link</a> |
 | <a href="https://softuni.bg/trainings/2348/csharp-advanced-may-2019"> C# Advanced </a>                                             | <a href="https://softuni.bg/certificates/details/67808/53c65af2"> Link</a> |
@@ -44,10 +44,10 @@
 
 <td>
 
-| **Course**                                                                               | **Link**                  |
-| ---------------------------------------------------------------------------------------- | ------------------------- |
-| <a href="https://softuni.bg/trainings/3122/html-and-css-september-2020"> HTML & CSS </a> | <a href="https://softuni.bg/certificates/details/91333/14034f66"> Link </a>  |
-| <a href="https://softuni.bg/trainings/3249/angular-november-2020"> Angular </a>          | <a href="#"> Soon... </a> |
+| **Course**                                                                               | **Link**                                                                    |
+| ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| <a href="https://softuni.bg/trainings/3122/html-and-css-september-2020"> HTML & CSS </a> | <a href="https://softuni.bg/certificates/details/91333/14034f66"> Link </a> |
+| <a href="https://softuni.bg/trainings/3249/angular-november-2020"> Angular </a>          | <a href="https://softuni.bg/certificates/details/94796/261bec71"> Link </a> |
 
 </td>
 </tr>
@@ -58,8 +58,8 @@
 
 <td>
 
-| **Diploma**      | **Link** |
-| ---------------- | -------- |
+| **Diploma**      | **Link**                                                                    |
+| ---------------- | --------------------------------------------------------------------------- |
 | C# Web Developer | <a href="https://softuni.bg/certificates/details/92725/c215dbb8"> Link </a> |
 
 </td>
