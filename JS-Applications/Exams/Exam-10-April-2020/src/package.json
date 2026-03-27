@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.9",
     "jquery": "^3.5.1",
     "sammy": "^0.7.6"
   }
